@@ -9,12 +9,15 @@ import Link from "next/link"
 import { MobileNav } from "@/components/mobile-nav"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { ScrollToTop } from "@/components/scroll-to-top"
+import { BlogCard } from "@/components/blog-card"
+import { getFeaturedPost, getRegularPosts } from "@/lib/blog"
 
 export default function BlogPage() {
+  const featuredPost = getFeaturedPost()
+  const regularPosts = getRegularPosts()
   return (
     <main className="min-h-screen">
     
-
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 py-20 px-4 md:px-8 lg:px-16 relative overflow-hidden">
         <div className="max-w-4xl mx-auto text-center relative z-10">
@@ -43,6 +46,25 @@ export default function BlogPage() {
         <div className="absolute bottom-20 left-10 w-16 h-16 bg-pink-200 dark:bg-pink-800 rounded-full opacity-50"></div>
       </section>
 
+      <div className="min-h-screen bg-white">
+      <div className="max-w-7xl mx-auto px-4 py-16">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">Recent Blog Posts</h1>
+
+        {/* Featured Post */}
+        {featuredPost && (
+          <div className="mb-16">
+            <BlogCard post={featuredPost} featured />
+          </div>
+        )}
+
+        {/* Regular Posts Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          {regularPosts.map((post) => (
+            <BlogCard key={post.id} post={post} />
+          ))}
+        </div>
+      </div>
+    </div>
       
 
       <ScrollToTop />

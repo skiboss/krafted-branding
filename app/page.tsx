@@ -4,18 +4,21 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { MapPin, Phone, Mail, Facebook, Instagram, Twitter, Check, TrendingUp, BarChart3, Target, HouseIcon, CheckCircle, PhoneCall } from "lucide-react"
+import { MapPin, Phone, Mail, Facebook, Instagram, Twitter, Check, TrendingUp, BarChart3, Target, HouseIcon, CheckCircle, PhoneCall, Trello, Wind } from "lucide-react"
 import Link from "next/link"
 import { ScrollToTop } from "@/components/scroll-to-top"
 import { BookCall } from "@/components/book-call"
+import { ContactForm } from "@/components/contact-us"
+import ServicesSection from "@/components/services-section"
+import { HeroSlider } from "@/components/hero-slider"
 
 export default function HomePage() {
   return (
     <main className="min-h-screen">
-      
 
       {/* Hero Section */}
-      <section className="bg-[#f2f2f2] dark:from-purple-900/20 dark:to-pink-900/20 py-20 px-4 md:px-8 lg:px-16 relative overflow-hidden">
+      <section className="bg-[#f2f2f2] dark:from-purple-900/20 dark:to-pink-900/20 py-20 px-4 sm:pt-32 md:px-8 lg:px-16
+       overflow-hidden">
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
             Skyrocket Your <span className="text-[#541349] dark:text-purple-400">E-commerce</span> or{" "}
@@ -42,6 +45,9 @@ export default function HomePage() {
         <div className="absolute bottom-20 left-10 w-16 h-16 bg-pink-200 dark:bg-pink-800 rounded-full opacity-50"></div>
       </section>
 
+      {/* Hero Slider */}
+      {/* <HeroSlider /> */}
+
       {/* Trusted by Section */}
       <section className="bg-white dark:bg-gray-900 py-8 px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto text-center">
@@ -59,33 +65,24 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Solutions Section */}
-      <section className="bg-white dark:bg-gray-900 py-16 px-4 md:px-8 lg:px-16">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-            Solutions That Drive Revenue and Trust
-          </h2>
-          <p className="text-lg text-gray-700 dark:text-gray-300 mb-12">
-            Everything you need to grow your business, backed by data and optimized for results
-          </p>
-        </div>
-      </section>
+      {/* Services Section */}
+      <ServicesSection />
 
       {/* Why Choose Us Section */}
-      <section className="bg-gray-50 dark:bg-gray-800 py-16 px-4 md:px-8 lg:px-16">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Why Choose Us?</h2>
-            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+      <section className="bg-white dark:bg-gray-800 py-16 px-4 md:px-8 lg:px-16">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Why Choose Us?</h2>
+            <p className="text-gray-600 text-lg dark:text-gray-400 max-w-2xl mx-auto">
               We're not just another agency. We're growth partners invested in your success
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             {/* Card 1 */}
-            <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-700">
-              <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4">
-                <BarChart3 className="w-6 h-6 text-purple-700 dark:text-purple-400" />
+            <div className="bg-[#f5f6f9] dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-700">
+              <div className="w-12 h-12 bg-white dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4">
+                <Wind className="w-6 h-6 dark:text-purple-400" />
               </div>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                 Deep knowledge of e-commerce and healthcare markets.
@@ -93,25 +90,25 @@ export default function HomePage() {
             </div>
 
             {/* Card 2 */}
-            <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-700">
-              <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4">
-                <TrendingUp className="w-6 h-6 text-purple-700 dark:text-purple-400" />
+            <div className="bg-[#f5f6f9] dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-700">
+              <div className="w-12 h-12 bg-white dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4">
+                <TrendingUp className="w-6 h-6 dark:text-purple-400" />
               </div>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed">Track record of measurable growth.</p>
             </div>
 
             {/* Card 3 */}
-            <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-700">
-              <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4">
-                <BarChart3 className="w-6 h-6 text-purple-700 dark:text-purple-400" />
+            <div className="bg-[#f5f6f9] dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-700">
+              <div className="w-12 h-12 bg-white dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4">
+                <Trello className="w-6 h-6 dark:text-purple-400" />
               </div>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed">Every decision backed by analytics.</p>
             </div>
 
             {/* Card 4 */}
-            <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-700">
-              <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4">
-                <Target className="w-6 h-6 text-purple-700 dark:text-purple-400" />
+            <div className="bg-[#f5f6f9] dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-700">
+              <div className="w-12 h-12 bg-white dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4">
+                <Target className="w-6 h-6 dark:text-purple-400" />
               </div>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                 No cookie-cutter approaches, 100% custom strategies
@@ -120,8 +117,8 @@ export default function HomePage() {
           </div>
 
           <div className="text-center">
-            <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">Ready to Transform Your Growth?</p>
-            <Button className="bg-purple-700 hover:bg-purple-800 text-white">Request Custom Strategy</Button>
+            <p className="text-xl text-gray-700 dark:text-gray-300 mb-6">Ready to Transform Your Growth?</p>
+            <Button className="bg-[#eb4e5f] hover:bg-white hover:text-[#eb4e5f] border border-[#eb4e5f] text-white">Request Custom Strategy</Button>
           </div>
         </div>
       </section>
@@ -431,97 +428,7 @@ export default function HomePage() {
 
       {/* Contact Form Section */}
       {/* <section className="bg-gradient-to-r from-purple-900 to-purple-800 text-white py-16 px-4 md:px-8 lg:px-16"> */}
-      <section className="bg-[#401135] text-white py-16 px-4 md:px-8 lg:px-16">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-medium mb-4">Contact Us</h2>
-            <p className="text-white/80 max-w-2xl mx-auto">
-              We craft data-driven, results-obsessed strategies to grow your revenue and your brand in the e-commerce
-              and healthcare industries
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Left Column - Get In Touch */}
-            <div>
-              <h3 className="text-2xl font-bold mb-3">Get In Touch</h3>
-              <p className="text-white/80 mb-8">
-                Kickstart your journey to
-                <br />
-                visible business growth
-              </p>
-
-              <div className="space-y-6">
-                <div className="flex items-center gap-4">
-                  <HouseIcon className="h-5 w-5 text-white/80" />
-                  <span>Address</span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <Phone className="h-5 w-5 text-white/80" />
-                  <span>Phone Number</span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <Mail className="h-5 w-5 text-white/80" />
-                  <span>Email Address</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Column - Contact Form */}
-            <div className="bg-white/5 rounded-lg p-6">
-              <div className="grid sm:grid-cols-2 gap-4 mb-4">
-                <div>
-                  <label className="block mb-2 text-sm">Name</label>
-                  <Input
-                    placeholder="Input Name"
-                    className="bg-white/5 border-white/20 text-white placeholder:text-[#bcbcbc]/60"
-                  />
-                </div>
-                <div>
-                  <label className="block mb-2 text-sm">Email</label>
-                  <Input
-                    placeholder="Input Email"
-                    className="bg-white/5 border-white/20 text-white placeholder:text-[#bcbcbc]/60"
-                  />
-                </div>
-              </div>
-
-              <div className="grid sm:grid-cols-2 gap-4 mb-4">
-                <div>
-                  <label className="block mb-2 text-sm">Company Name</label>
-                  <Input
-                    placeholder="Input Company Name"
-                    className="bg-white/5 border-white/20 text-white placeholder:text-[#bcbcbc]/60"
-                  />
-                </div>
-                <div>
-                  <label className="block mb-2 text-sm">Industry</label>
-                  <Select>
-                    <SelectTrigger className="bg-white/5 border-white/20 text-white">
-                      <SelectValue placeholder="Select Industry" className="text-blue" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="ecommerce">E-Commerce</SelectItem>
-                      <SelectItem value="healthcare">Healthcare</SelectItem>
-                      <SelectItem value="other">Other</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-              </div>
-
-              <div className="mb-6">
-                <label className="block mb-2 text-sm">Message</label>
-                <Textarea
-                  placeholder="Enter Message"
-                  className="bg-white/5 border-white/20 text-white placeholder:text-[#bcbcbc]/60 min-h-[120px]"
-                />
-              </div>
-
-              <Button className="w-full   bg-[#f3cded]/100 text-[#541349] hover:text-white hover:bg-[#541349] hover:border">Send Message</Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ContactForm />
 
 
       <ScrollToTop />

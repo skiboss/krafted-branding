@@ -11,28 +11,55 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen">
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 py-16 px-4 md:px-8 lg:px-16">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Built to Help Visionaries Scale Smarter
-          </h1>
-          <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-            We combine performance marketing with strategic creativity to deliver real results for e-commerce and
-            healthcare brands.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              variant="outline"
-              className="border-gray-300 text-gray-700 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800"
-            >
-              See Our Results
-            </Button>
-            <Button className="bg-purple-700 hover:bg-purple-800 text-white">Book a Free Audit Call</Button>
-          </div>
-        </div>
-      </section>
+          {/* Hero Section */}
+            <section className="min-h-screen bg-gradient-to-br from-gray-50 to-white flex items-center">
+                  <div className="max-w-6xl mx-auto pt-12 sm:pt-32 px-4 sm:px-6 lg:px-12 w-full">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+                      {/* Left Column - Content (50%) */}
+                      <div className="space-y-8 flex flex-col justify-center">
+                        <div className="space-y-11">
+                          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-gray-900 leading-loose sm:leading-normal">
+                            Built to Help <br />
+                              Visionaries{" "}<span className="text-red-500">
+                              Scale<br />
+                              Smarter  </span>
+                          </h1>
+            
+                          <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
+                            We exist to help purpose-drive brands grow with clarity and impact
+                           </p>
+                        </div>
+            
+                        <div className="pt-4">
+                          <Button
+                            size="lg"
+                            className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-md font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                          >
+                            Book a Free Audit Call
+                          </Button>
+                        </div>
+                      </div>
+            
+                      {/* Right Column - Image (50%) */}
+                      <div className="relative flex items-center justify-center h-full">
+                        <div className="relative overflow-hidden rounded-2xl shadow-2xl w-full max-w-lg">
+                          <Image
+                            src="/hero-meeting.png"
+                            alt="Professional business meeting with team discussing strategy around a conference table"
+                            width={600}
+                            height={400}
+                            className="w-full h-auto object-cover bg-[url(../public/hero-meeting.png)]"
+                            priority
+                          />
+                        </div>
+            
+                        {/* Decorative Elements */}
+                        <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full opacity-20 blur-xl"></div>
+                        <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full opacity-20 blur-xl"></div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
 
       {/* Mission Statement Section with Background Image */}
       <section className="relative py-20 px-4 md:px-8 lg:px-16">

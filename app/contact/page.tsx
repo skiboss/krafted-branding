@@ -10,6 +10,7 @@ import { MobileNav } from "@/components/mobile-nav"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { ScrollToTop } from "@/components/scroll-to-top"
 import { BookCall } from "@/components/book-call"
+import { ContactForm } from "@/components/contact-us"
 
 export default function ContactPage() {
   return (
@@ -18,18 +19,14 @@ export default function ContactPage() {
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 py-16 px-4 md:px-8 lg:px-16">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Contact Us</h1>
-          <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-            We craft data-driven, results-obsessed strategies to grow your revenue and your brand in the e-commerce and
-            healthcare industries
+        <div className="max-w-5xl sm:pt-24 mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Contact <span className="text-[#eb4e5f]">Us</span></h1>
+          <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-xl">
+            Let’s create a custom marketing plan to take your e-commerce or healthcare brand to the next level.  
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800">
-              Explore Services
-            </Button>
-            <Button className="bg-[#541349] hover:bg-white border text-white hover:text-[#541349]">Book Consultation</Button>
+          <div className="">
+            <Button className="bg-[#eb4e5f] hover:bg-white border text-white hover:text-[#541349] px-8">Book Consultation</Button>
           </div>
         </div>
       </section>
@@ -134,97 +131,8 @@ export default function ContactPage() {
           </div>
         </div>  
       </section>
-      <section className="bg-gradient-to-r from-purple-900 to-purple-800 text-white py-16 px-4 md:px-8 lg:px-16">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
-            <p className="text-white/80 max-w-2xl mx-auto">
-              We craft data-driven, results-obsessed strategies to grow your revenue and your brand in the e-commerce and
-              healthcare industries
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Left Column - Get In Touch */}
-            <div>
-              <h3 className="text-2xl font-bold mb-3">Get In Touch</h3>
-              <p className="text-white/80 mb-8">
-                Kickstart your journey to
-                <br />
-                visible business growth
-              </p>
-
-              <div className="space-y-6">
-                <div className="flex items-center gap-4">
-                  <MapPin className="h-5 w-5 text-white/80" />
-                  <span>Address</span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <Phone className="h-5 w-5 text-white/80" />
-                  <span>Phone Number</span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <Mail className="h-5 w-5 text-white/80" />
-                  <span>Email Address</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Column - Contact Form */}
-            <div className="bg-purple-900/50 rounded-lg p-6">
-              <div className="grid grid-cols-2 gap-4 mb-4">
-                <div>
-                  <label className="block mb-2 text-sm">Name</label>
-                  <Input
-                    placeholder="Input Name"
-                    className="bg-purple-800/50 border-purple-700 text-white placeholder:text-purple-300/50"
-                  />
-                </div>
-                <div>
-                  <label className="block mb-2 text-sm">Email</label>
-                  <Input
-                    placeholder="Input Email"
-                    className="bg-purple-800/50 border-purple-700 text-white placeholder:text-purple-300/50"
-                  />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-2 gap-4 mb-4">
-                <div>
-                  <label className="block mb-2 text-sm">Company Name</label>
-                  <Input
-                    placeholder="Input Company Name"
-                    className="bg-purple-800/50 border-purple-700 text-white placeholder:text-purple-300/50"
-                  />
-                </div>
-                <div>
-                  <label className="block mb-2 text-sm">Industry</label>
-                  <Select>
-                    <SelectTrigger className="bg-purple-800/50 border-purple-700 text-white">
-                      <SelectValue placeholder="Select Industry" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="ecommerce">E-Commerce</SelectItem>
-                      <SelectItem value="healthcare">Healthcare</SelectItem>
-                      <SelectItem value="other">Other</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-              </div>
-
-              <div className="mb-6">
-                <label className="block mb-2 text-sm">Message</label>
-                <Textarea
-                  placeholder="Enter Message"
-                  className="bg-purple-800/50 border-purple-700 text-white placeholder:text-purple-300/50 min-h-[120px]"
-                />
-              </div>
-
-              <Button className="w-full bg-purple-200 text-purple-900 hover:bg-purple-100">Send Message</Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      
+      <ContactForm />
       <ScrollToTop />
   </div>
   )

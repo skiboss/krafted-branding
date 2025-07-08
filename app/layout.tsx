@@ -37,8 +37,8 @@ export default function RootLayout({
           disableTransitionOnChange={false}
         >
           {/* Header/Navigation */}
-          <header className="bg-[#f2f2f2] dark:from-purple-900/20 dark:to-pink-900/20 shadow-sm py-4 px-4 md:px-8 lg:px-16 dark:border-gray-700 ">
-            <div className="max-w-7xl mx-auto flex items-center justify-between bg-transparent sm:border border-2 sm:rounded-full px-7 py-2">
+          <header className=" bg-[#f2f2f2] sm:bg-transparent dark:from-purple-900/20 dark:to-pink-900/20 shadow-sm px-4 md:px-8 lg:px-8 dark:border-gray-700 mx-auto flex justify-center">
+            <div className="sm:absolute w-full max-w-6xl mx-auto dark:sm:bg-slate-700 flex items-center justify-between bg-transparent sm:border sm:rounded-full px-10 py-2 sm:mt-8">
               <div className="flex items-center">
                 <Link href="/">
                   <Image
@@ -79,7 +79,7 @@ export default function RootLayout({
 
               <div className="hidden md:flex items-center gap-4">
                 <ThemeToggle />
-                <Button className="bg-[#541349] hover:bg-[#eb9dbd] text-white">
+                <Button className="bg-[#eb4e5f] hover:bg-[#eb4e50] text-white rounded-full">
                   Get Free Audit
                 </Button>
               </div>
