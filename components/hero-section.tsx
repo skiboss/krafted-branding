@@ -12,7 +12,7 @@ export function HeroSection() {
           <div className="space-y-8 flex flex-col justify-center">
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                SOlutions Built for <br />
+                Solutions Built for <br />
                 Visionaries{" "}
                 <span className="text-red-500">
                   Scale <br />

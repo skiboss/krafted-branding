@@ -65,12 +65,14 @@ export default function TabbedServices() {
               <TabsTrigger
                 value="ecommerce"
                 className="relative z-10 px-6 py-2 rounded-full font-medium transition-all duration-300 data-[state=active]:bg-white data-[state=active]:text-blue-600 data-[state=active]:shadow-sm data-[state=inactive]:text-gray-600 data-[state=inactive]:bg-transparent"
+                id="ecommerce-tab"
               >
                 E-Commerce
               </TabsTrigger>
               <TabsTrigger
                 value="healthcare"
                 className="relative z-10 px-6 py-2 rounded-full font-medium transition-all duration-300 data-[state=active]:bg-white data-[state=active]:text-red-500 data-[state=active]:shadow-sm data-[state=inactive]:text-gray-600 data-[state=inactive]:bg-transparent"
+                id="healthcare-tab"
               >
                 Healthcare
               </TabsTrigger>

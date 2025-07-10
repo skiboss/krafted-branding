@@ -80,7 +80,10 @@ export default function RootLayout({
               <div className="hidden md:flex items-center gap-4">
                 <ThemeToggle />
                 <Button className="bg-[#eb4e5f] hover:bg-[#eb4e50] text-white rounded-full">
-                  Get Free Audit
+                  <Link
+                  href="/blog">
+                    Get Free Audit
+                    </Link>
                 </Button>
               </div>
 
@@ -140,7 +143,7 @@ export default function RootLayout({
                   </li>
                   <li>
                     <Link
-                      href="#"
+                      href="/services/#case-study"
                       className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
                     >
                       Case Studies
@@ -165,7 +168,7 @@ export default function RootLayout({
                 <ul className="space-y-2">
                   <li>
                     <Link
-                      href="#"
+                      href="/services/#ecommerce-tab"
                       className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
                     >
                       E-Commerce
@@ -173,28 +176,14 @@ export default function RootLayout({
                   </li>
                   <li>
                     <Link
-                      href="#"
+                      href="/services/#healthcare-tab"
                       className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
                     >
                       Healthcare
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-                    >
-                      PPC
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-                    >
-                      SEO
-                    </Link>
-                  </li>
+                
+                  
                 </ul>
               </div>
 
@@ -206,7 +195,7 @@ export default function RootLayout({
                 <ul className="space-y-2">
                   <li>
                     <Link
-                      href="#"
+                      href="/contact/#contact-form"
                       className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
                     >
                       Free Audit
@@ -214,7 +203,7 @@ export default function RootLayout({
                   </li>
                   <li>
                     <Link
-                      href="#"
+                      href="/#process"
                       className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
                     >
                       Process
@@ -237,7 +226,7 @@ export default function RootLayout({
               <div className="text-sm text-gray-600 dark:text-gray-400">
                 © 2025 Krafted Branding. All rights reserved.
               </div>
-              <div className="flex space-x-4 mt-4 md:mt-0">
+              <div className="flex space-x-4 mt-4 md:mt-0 md:pe-8">
                 <Link
                   href="#"
                   className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"

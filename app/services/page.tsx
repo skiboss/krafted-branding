@@ -12,6 +12,7 @@ import TabbedServices from "@/components/tabbed-services";
 import { CaseStudySection } from "@/components/case-study-section";
 import { CaseStudyCard } from "@/components/case-study-card";
 import { NumbersSection } from "@/components/numbers-section";
+import { GetToKnowSection } from "@/components/get-to-know-us";
 
 export default function ServicePage() {
   return (
@@ -77,6 +78,7 @@ export default function ServicePage() {
 
       {/* Numbers Section */}
       <NumbersSection />
+      <GetToKnowSection />
 
       {/* Additional Case Studies Section */}
         <section className="py-16 px-4 max-w-5xl mx-auto">

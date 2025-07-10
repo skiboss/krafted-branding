@@ -11,6 +11,8 @@ import { BookCall } from "@/components/book-call"
 import { ContactForm } from "@/components/contact-us"
 import ServicesSection from "@/components/services-section"
 import { HeroSlider } from "@/components/hero-slider"
+import { GetToKnowSection } from "@/components/get-to-know-us"
+import ProcessSection from "@/components/process-section"
 
 export default function HomePage() {
   return (
@@ -48,22 +50,8 @@ export default function HomePage() {
       {/* Hero Slider */}
       {/* <HeroSlider /> */}
 
-      {/* Trusted by Section */}
-      <section className="bg-white dark:bg-gray-900 py-8 px-4 md:px-8 lg:px-16">
-        <div className="max-w-7xl mx-auto text-center">
-          <p className="text-gray-600 dark:text-gray-400 text-lg">Trusted by 200+ E-commerce & Healthcare Brands</p>
-        </div>
-      </section>
-
-      {/* Deep Expertise Section */}
-      <section className="bg-gray-50 dark:bg-gray-800 py-16 px-4 md:px-8 lg:px-16">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Deep Expertise in Your Industry</h2>
-          <p className="text-lg text-gray-700 dark:text-gray-300">
-            We don't do generic marketing. We speak e-commerce and healthcare fluently
-          </p>
-        </div>
-      </section>
+      {/* Get To Know Us Section */}
+      <GetToKnowSection />
 
       {/* Services Section */}
       <ServicesSection />
@@ -118,10 +106,13 @@ export default function HomePage() {
 
           <div className="text-center">
             <p className="text-xl text-gray-700 dark:text-gray-300 mb-6">Ready to Transform Your Growth?</p>
-            <Button className="bg-[#eb4e5f] hover:bg-white hover:text-[#eb4e5f] border border-[#eb4e5f] text-white">Request Custom Strategy</Button>
+            <Button className="bg-[#eb4e5f] hover:bg-white hover:text-[#eb4e5f] border border-[#eb4e5f] text-white md:px-8">Request Custom Strategy</Button>
           </div>
         </div>
       </section>
+
+      {/* Process Section */}
+      <ProcessSection />
 
       {/* Client Testimonials Section */}
       <section className="bg-white dark:bg-gray-900 py-16 px-4 md:px-8 lg:px-16">

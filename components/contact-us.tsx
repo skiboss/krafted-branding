@@ -11,7 +11,7 @@ export function ContactForm() {
   return (
     /* Contact Form Section */
     //  <section className="bg-gradient-to-r from-purple-900 to-purple-800 text-white py-16 px-4 md:px-8 lg:px-16"> 
-      <section className="bg-[#1f0104] text-white py-16 px-4 md:px-8 lg:px-16">
+      <section className="bg-[#1f0104] text-white py-16 px-4 md:px-8 lg:px-16" id="contact-form">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-medium mb-4">Contact Us</h2>
@@ -53,14 +53,14 @@ export function ContactForm() {
                 <div>
                   <label className="block mb-2 text-sm">Name</label>
                   <Input
-                    placeholder="Input Name"
+                    placeholder="Susan Grey"
                     className="bg-white/5 border-white/20 text-white placeholder:text-[#bcbcbc]/60"
                   />
                 </div>
                 <div>
                   <label className="block mb-2 text-sm">Email</label>
                   <Input
-                    placeholder="Input Email"
+                    placeholder="sgrey@example.com"
                     className="bg-white/5 border-white/20 text-white placeholder:text-[#bcbcbc]/60"
                   />
                 </div>
@@ -70,7 +70,7 @@ export function ContactForm() {
                 <div>
                   <label className="block mb-2 text-sm">Company Name</label>
                   <Input
-                    placeholder="Input Company Name"
+                    placeholder="Your Company"
                     className="bg-white/5 border-white/20 text-white placeholder:text-[#bcbcbc]/60"
                   />
                 </div>
@@ -92,7 +92,7 @@ export function ContactForm() {
               <div className="mb-6">
                 <label className="block mb-2 text-sm">Message</label>
                 <Textarea
-                  placeholder="Enter Message"
+                  placeholder="Tell us about your project..."
                   className="bg-white/5 border-white/20 text-white placeholder:text-[#bcbcbc]/60 min-h-[120px]"
                 />
               </div>
