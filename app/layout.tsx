@@ -37,7 +37,7 @@ export default function RootLayout({
           disableTransitionOnChange={false}
         >
           {/* Header/Navigation */}
-          <header className=" bg-[#f2f2f2] sm:bg-transparent dark:from-purple-900/20 dark:to-pink-900/20 shadow-sm px-4 md:px-8 lg:px-8 dark:border-gray-700 mx-auto flex justify-center">
+          <header className=" bg-[#f2f2f2] dark:from-purple-900/20 dark:to-pink-900/20 shadow-sm px-4 md:px-8 lg:px-8 dark:border-gray-700 mx-auto flex justify-center">
             <div className="sm:absolute w-full max-w-6xl mx-auto dark:sm:bg-slate-700 flex items-center justify-between bg-transparent sm:border sm:rounded-full px-10 py-2 sm:mt-8">
               <div className="flex items-center">
                 <Link href="/">

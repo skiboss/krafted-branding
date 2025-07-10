@@ -60,7 +60,7 @@ export function MobileNav({ className }: MobileNavProps) {
                 About
               </Link>
               <Link
-                href="#"
+                href="/services"
                 className="text-lg font-medium py-2 hover:text-purple-700 dark:text-gray-300 dark:hover:text-purple-400"
                 onClick={() => setIsOpen(false)}
               >
@@ -74,7 +74,7 @@ export function MobileNav({ className }: MobileNavProps) {
                 Contact Us
               </Link>
               <Link
-                href="#"
+                href="/blog"
                 className="text-lg font-medium py-2 hover:text-purple-700 dark:text-gray-300 dark:hover:text-purple-400"
                 onClick={() => setIsOpen(false)}
               >
