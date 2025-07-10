@@ -135,14 +135,6 @@ export default function RootLayout({
                   </li>
                   <li>
                     <Link
-                      href="#"
-                      className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-                    >
-                      Careers
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
                       href="/services/#case-study"
                       className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
                     >
