@@ -261,7 +261,7 @@ export function NumbersSection() {
           Ready to Transform Your Growth?
         </h3>
         <Button
-          className={`bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-md font-medium shadow-lg transition-all duration-1000 delay-1400 ${
+          className={`bg-red-500 hover:bg-red-600 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl text-white px-8 py-3 rounded-md font-medium duration-500 delay-1400 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >

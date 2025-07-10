@@ -56,7 +56,7 @@ export default function TabbedServices() {
   const additionalHealthcareServices = ["Healthcare Content Marketing", "Telehealth Marketing"]
 
   return (
-    <section className="py-20 px-12 max-w-5xl mx-auto mt-4">
+    <section className="py-10 px-10 max-w-5xl mx-auto mt-10">
       <Tabs defaultValue="ecommerce" className="w-full">
         {/* Custom Tab Navigation */}
         <div className="flex justify-center sm:justify-start mb-6">
@@ -104,9 +104,9 @@ export default function TabbedServices() {
             <div className="w-full">
                 <div className="space-y-6">
                 {ecommerceServices.map((service, index) => (
-                  <div key={index} className="space-y-2">
-                    <h4 className="font-semibold text-gray-900">{service.title}</h4>
-                    <p className="text-sm text-gray-600 leading-relaxed">{service.description}</p>
+                  <div key={index} className="space-y-2 sm:pt-2">
+                    <h4 className="font-bold text-gray-900">{service.title}</h4>
+                    <p className="text-base text-gray-600 leading-relaxed">{service.description}</p>
                   </div>
                 ))}
               </div>
@@ -171,7 +171,7 @@ export default function TabbedServices() {
         {/* Call to Action */}
         <div className="text-center mt-12">
           <h3 className="text-xl font-semibold text-gray-900 mb-4">Ready to Transform Your Growth?</h3>
-          <Button className="bg-red-500 hover:bg-red-600 text-white px-10 py-3 rounded-md font-medium">
+          <Button className="bg-red-500 hover:bg-red-600 text-white px-10 py-3 rounded-md font-medium transition-all duration-500 transform hover:scale-105 shadow-lg hover:shadow-xl">
             Request Custom Strategy
           </Button>
         </div>

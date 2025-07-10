@@ -121,7 +121,7 @@ export function CaseStudySection() {
   ]
 
   return (
-    <section ref={sectionRef} className="py-4 px-6 max-w-5xl mx-auto mb-16" id="case-study">
+    <section ref={sectionRef} className="py-4 px-6 max-w-5xl mx-auto mb-12" id="case-study">
       {/* Header Badge */}
       <div className="flex mb-12">
         <div

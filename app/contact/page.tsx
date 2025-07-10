@@ -20,13 +20,13 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-5xl sm:pt-24 mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Contact <span className="text-[#eb4e5f]">Us</span></h1>
-          <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-xl">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-normal text-gray-900 leading-tight sm:leading-normal">Contact <span className="text-[#eb4e5f]">Us</span></h1>
+          <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-md sm:text-xl pt-5 md:py-6">
             Let’s create a custom marketing plan to take your e-commerce or healthcare brand to the next level.  
           </p>
 
           <div className="">
-            <Button className="bg-[#eb4e5f] hover:bg-white border text-white hover:text-[#541349] px-8">Book Consultation</Button>
+            <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white px-8 md:px-12 py-4 rounded-md font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300">Book Consultation</Button>
           </div>
         </div>
       </section>

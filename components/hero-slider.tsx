@@ -38,7 +38,7 @@ const slides: SlideData[] = [
   },
   {
     id: 3,
-    image: "/placeholder.svg?height=800&width=1200",
+    image: "/images/hero-slide-3.png",
     title: "Transform Your {Digital Presence} with {Data-Driven} Marketing Solutions",
     highlightedWords: ["Digital Presence", "Data-Driven"],
     subtitle:
@@ -87,7 +87,7 @@ export function HeroSlider() {
   }
 
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative h-screen overflow-hidden z-0">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
@@ -166,14 +166,14 @@ export function HeroSlider() {
       </div>
 
       {/* Progress Bar */}
-      <div className="absolute bottom-0 left-0 right-0 z-20">
+      {/* <div className="absolute bottom-0 left-0 right-0 z-20">
         <div className="h-1 bg-white/20">
           <div
             className="h-full bg-red-500 transition-all duration-300"
             style={{ width: `${((currentSlide + 1) / slides.length) * 100}%` }}
           />
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }

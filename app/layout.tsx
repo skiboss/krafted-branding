@@ -37,8 +37,8 @@ export default function RootLayout({
           disableTransitionOnChange={false}
         >
           {/* Header/Navigation */}
-          <header className=" bg-[#f2f2f2] dark:from-purple-900/20 dark:to-pink-900/20 shadow-sm px-4 md:px-8 lg:px-8 dark:border-gray-700 mx-auto flex justify-center">
-            <div className="sm:absolute w-full max-w-6xl mx-auto dark:sm:bg-slate-700 flex items-center justify-between bg-transparent sm:border sm:rounded-full px-10 py-2 sm:mt-8">
+          <header className="bg-[#f2f2f2] sm:bg-transparent dark:from-purple-900/20 dark:to-pink-900/20 shadow-sm px-4 md:px-8 lg:px-8 dark:border-gray-700 mx-auto flex justify-center z-10">
+            <div className="sm:absolute bg-[#f2f2f2] w-full max-w-6xl mx-auto dark:sm:bg-slate-700 flex items-center justify-between sm:border sm:rounded-full px-10 py-2 sm:mt-8 z-20">
               <div className="flex items-center">
                 <Link href="/">
                   <Image
@@ -96,7 +96,7 @@ export default function RootLayout({
 
         {/* Footer Section */}
         <footer className="bg-white dark:bg-gray-900 py-12 px-4 md:px-8 lg:px-16 border-t dark:border-gray-700">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-7xl text-center sm:text-start mx-auto">
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               {/* Logo and Tagline */}
               <div>
@@ -106,7 +106,7 @@ export default function RootLayout({
                     alt="Krafted Branding Logo"
                     width={100}
                     height={30}
-                    className="mb-4"
+                    className="mb-4 mx-auto md:mx-0"
                   />
                 </div>
                 <h3 className="font-bold mb-1 dark:text-white">
@@ -214,7 +214,7 @@ export default function RootLayout({
             </div>
 
             {/* Copyright and Social */}
-            <div className="flex flex-wrap justify-between items-center pt-6 border-t border-gray-200 dark:border-gray-700">
+            <div className="flex flex-col sm:flex-row flex-wrap justify-between items-center pt-6 border-t border-gray-200 dark:border-gray-700 ">
               <div className="text-sm text-gray-600 dark:text-gray-400">
                 © 2025 Krafted Branding. All rights reserved.
               </div>

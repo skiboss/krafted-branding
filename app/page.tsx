@@ -19,7 +19,7 @@ export default function HomePage() {
     <main className="min-h-screen">
 
       {/* Hero Section */}
-      <section className="bg-[#f2f2f2] dark:from-purple-900/20 dark:to-pink-900/20 py-20 px-4 sm:pt-32 md:px-8 lg:px-16
+      {/* <section className="bg-[#f2f2f2] dark:from-purple-900/20 dark:to-pink-900/20 py-20 px-4 sm:pt-32 md:px-8 lg:px-16
        overflow-hidden">
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
@@ -40,15 +40,15 @@ export default function HomePage() {
             </Button>
             <Button className="bg-[#541349] hover:bg-white hover:border border-[#541349] text-white hover:text-[#541349]">Book Consultation</Button>
           </div>
-        </div>
+        </div> */}
 
         {/* Decorative elements */}
-        <div className="absolute top-20 right-10 w-20 h-20 bg-purple-200 dark:bg-purple-800 rounded-full opacity-50"></div>
-        <div className="absolute bottom-20 left-10 w-16 h-16 bg-pink-200 dark:bg-pink-800 rounded-full opacity-50"></div>
-      </section>
+        {/* <div className="absolute top-20 right-10 w-20 h-20 bg-purple-200 dark:bg-purple-800 rounded-full opacity-50"></div>
+        <div className="absolute bottom-20 left-10 w-16 h-16 bg-pink-200 dark:bg-pink-800 rounded-full opacity-50"></div> */}
+      {/* </section> */}
 
       {/* Hero Slider */}
-      {/* <HeroSlider /> */}
+      <HeroSlider />
 
       {/* Get To Know Us Section */}
       <GetToKnowSection />

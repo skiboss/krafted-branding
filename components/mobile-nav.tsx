@@ -27,8 +27,8 @@ export function MobileNav({ className }: MobileNavProps) {
       </Button>
 
       {isOpen && (
-        <div className="fixed inset-0 z-50 bg-white dark:bg-gray-900">
-          <div className="flex h-full flex-col overflow-y-auto">
+        <div className="fixed h-full inset-0 z-50 bg-white dark:bg-gray-900">
+          <div className="flex flex-col overflow-y-auto">
             <div className="flex items-center justify-between px-4 py-4 border-b dark:border-gray-700">
               <p className="text-lg font-medium dark:text-white">Menu</p>
               <div className="flex items-center gap-2">

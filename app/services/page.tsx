@@ -18,13 +18,13 @@ export default function ServicePage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="min-h-screen bg-gradient-to-br from-gray-50 to-white flex items-center">
+      <section className="min-h-screen bg-gradient-to-br from-gray-50 to-white border-b border-b-gray-100 flex items-center">
             <div className="max-w-6xl mx-auto pt-12 sm:pt-32 px-4 sm:px-6 lg:px-12 w-full">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
                 {/* Left Column - Content (50%) */}
                 <div className="space-y-8 flex flex-col justify-center">
                   <div className="space-y-11">
-                    <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold text-gray-900 leading-tight sm:leading-relaxed">
+                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-normal text-gray-900 leading-tight sm:leading-normal">
                       Solutions Built for <br />
                         <span className="text-red-500">
                         Growth
@@ -40,7 +40,7 @@ export default function ServicePage() {
                   <div className="pt-4">
                     <Button
                       size="lg"
-                      className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-md font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                      className="bg-red-500 hover:bg-red-600 text-white px-8 md:px-12 py-4 rounded-md font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300"
                     >
                       Request a Custom Strategy
                     </Button>
@@ -78,10 +78,9 @@ export default function ServicePage() {
 
       {/* Numbers Section */}
       <NumbersSection />
-      <GetToKnowSection />
 
       {/* Additional Case Studies Section */}
-        <section className="py-16 px-4 max-w-5xl mx-auto">
+        <section className="py-12 px-4 max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">More Success Stories</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -152,7 +151,7 @@ export default function ServicePage() {
 
       {/* Client Testimonials Section */}
       <section className="bg-white dark:bg-gray-900 py-16 px-4 md:px-8 lg:px-16">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
               What Our Clients Say...
@@ -163,7 +162,7 @@ export default function ServicePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Testimonial 1 */}
             <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
               <div className="flex items-center gap-4 mb-4">
@@ -321,7 +320,7 @@ export default function ServicePage() {
           <h2 className="text-3xl md:text-4xl font-bold mb-10">
             Join the brands that chose specialization over generalization
           </h2>
-          <Button className="bg-[#fee5f8] text-[#1f0104] hover:bg-gray-100 px-16">
+          <Button className="bg-[#fee5f8] text-[#1f0104] hover:bg-gray-100 px-16 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
             Get Started
           </Button>
         </div>
