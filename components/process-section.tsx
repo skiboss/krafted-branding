@@ -101,13 +101,13 @@ export default function ProcessSection() {
             <div key={step.title} className="relative mb-16 last:mb-0">
               {/* Step Container */}
               <div ref={(el) => { stepRefs.current[index] = el }}
-                className={`flex items-center gap-8 lg:gap-16 ${
+                className={`flex items-center gap-8 w-full lg:gap-16 ${
                   isEven ? "lg:flex-row-reverse" : ""
                 } transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
               >
                 {/* Title Side */}
                 <div className={`flex-1 ${isEven ? "lg:text-right" : ""}`}>
-                  <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">{step.title}</h3>
+                  <h3 className=" text-xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-2">{step.title}</h3>
                 </div>
 
                 {/* Arrow */}
@@ -124,7 +124,7 @@ export default function ProcessSection() {
                 {/* Description Box */}
                 <div className="flex-2 relative">
                   <div
-                    className={`relative ${step.bgColor} ${step.borderColor} border-2 rounded-2xl p-6 md:mx-8 md:my-3 lg:p-8 transition-all duration-500 ${
+                    className={`relative ${step.bgColor} ${step.borderColor} border-2 rounded-2xl p-4 md:p-6 md:mx-8 md:my-3 lg:p-8 transition-all duration-500 ${
                       isVisible ? "transform translate-y-0 shadow-lg" : "transform translate-y-4 shadow-none"
                     }`}
                   >
@@ -140,7 +140,7 @@ export default function ProcessSection() {
                     </div>
 
                     {/* Description Text */}
-                    <p className={`text-gray-700 leading-relaxed text-lg ${isEven ? "lg:text-right" : ""} pt-2`}>
+                    <p className={`text-gray-700 leading-relaxed md:text-lg ${isEven ? "lg:text-right" : ""} pt-2`}>
                       {step.description}
                     </p>
                   </div>
