@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import { Shield, Anchor } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -15,9 +17,17 @@ import { MobileNav } from "@/components/mobile-nav";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { ScrollToTop } from "@/components/scroll-to-top";
 
+import { PageLoader } from "@/components/page-loader"
+import { useLoading } from "@/hooks/use-loading"
+
 export default function AboutPage() {
+
+      const { isLoading } = useLoading()
   return (
     <main className="min-h-screen">
+
+      <PageLoader isLoading={isLoading} text="Loading your experience..." />
+      
       {/* Hero Section */}
       <section className="min-h-screen bg-gradient-to-br from-gray-50 to-white flex items-center">
         <div className="max-w-6xl mx-auto pt-12 sm:pt-32 px-4 sm:px-6 pb-4 sm:pb-16 lg:px-12 w-full">

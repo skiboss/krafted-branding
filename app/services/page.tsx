@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import {
@@ -14,9 +16,17 @@ import { CaseStudyCard } from "@/components/case-study-card";
 import { NumbersSection } from "@/components/numbers-section";
 import { GetToKnowSection } from "@/components/get-to-know-us";
 
+
+import { PageLoader } from "@/components/page-loader"
+import { useLoading } from "@/hooks/use-loading"
+
 export default function ServicePage() {
+  
+    const { isLoading } = useLoading()
   return (
     <main className="min-h-screen">
+      
+      <PageLoader isLoading={isLoading} text="Loading your experience..." />
       {/* Hero Section */}
       <section className="min-h-screen bg-gradient-to-br from-gray-50 to-white border-b border-b-gray-100 flex items-center">
             <div className="max-w-6xl mx-auto pt-12 sm:pt-32 px-4 sm:px-6 lg:px-12 w-full">

@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -12,10 +14,17 @@ import { ScrollToTop } from "@/components/scroll-to-top"
 import { BookCall } from "@/components/book-call"
 import { ContactForm } from "@/components/contact-us"
 
+
+import { PageLoader } from "@/components/page-loader"
+import { useLoading } from "@/hooks/use-loading"
+
 export default function ContactPage() {
+  
+    const { isLoading } = useLoading()
   return (
     <div className="min-h-screen">
   
+            <PageLoader isLoading={isLoading} text="Loading your experience..." />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 py-16 px-4 md:px-8 lg:px-16">

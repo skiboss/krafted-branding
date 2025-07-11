@@ -10,6 +10,10 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 
+
+import { PageLoader } from "@/components/page-loader"
+import { useLoading } from "@/hooks/use-loading"
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -30,6 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
+        
         <ThemeProvider
           attribute="class"
           defaultTheme="light"

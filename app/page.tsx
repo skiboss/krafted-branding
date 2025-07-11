@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -14,10 +16,18 @@ import { HeroSlider } from "@/components/hero-slider"
 import { GetToKnowSection } from "@/components/get-to-know-us"
 import ProcessSection from "@/components/process-section"
 
+
+import { PageLoader } from "@/components/page-loader"
+import { useLoading } from "@/hooks/use-loading"
+
 export default function HomePage() {
+  
+  const { isLoading } = useLoading()
+
   return (
     <main className="min-h-screen">
 
+      <PageLoader isLoading={isLoading} text="Loading your experience..." />
       {/* Hero Section */}
       {/* <section className="bg-[#f2f2f2] dark:from-purple-900/20 dark:to-pink-900/20 py-20 px-4 sm:pt-32 md:px-8 lg:px-16
        overflow-hidden">

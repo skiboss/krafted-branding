@@ -54,7 +54,7 @@ export default function ServicesSection() {
   ]
 
   return (
-    <section ref={serviceRef} className="py-16 px-4 max-w-5xl mx-auto">
+    <section ref={serviceRef} className="sm:py-16 px-4 max-w-5xl mx-auto">
       {/* Header Badge */}
       <div className="flex mb-8">
         <div

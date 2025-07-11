@@ -111,10 +111,10 @@ export function HeroSlider() {
           {/* Content */}
           <div className="relative z-10 h-full flex items-center justify-center">
             <div className="max-w-6xl mx-auto px-4 text-center text-white">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6">
                 {renderTitle(slide.title, slide.highlightedWords)}
               </h1>
-              <p className="text-lg md:text-xl mb-8 max-w-4xl mx-auto leading-relaxed opacity-90">{slide.subtitle}</p>
+              <p className="text-lg md:text-xl mb-8 max-w-4xl mx-auto opacity-90">{slide.subtitle}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
                   size="lg"
@@ -136,7 +136,7 @@ export function HeroSlider() {
       ))}
 
       {/* Navigation Arrows */}
-      <button
+      {/* <button
         onClick={prevSlide}
         className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full p-3 transition-all duration-300"
         aria-label="Previous slide"
@@ -149,7 +149,7 @@ export function HeroSlider() {
         aria-label="Next slide"
       >
         <ChevronRight className="w-6 h-6 text-white" />
-      </button>
+      </button> */}
 
       {/* Slide Indicators */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex space-x-3">
