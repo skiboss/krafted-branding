@@ -43,7 +43,7 @@ export default function RootLayout({
         >
           {/* Header/Navigation */}
           <header className="bg-[#f2f2f2] sm:bg-transparent dark:from-purple-900/20 dark:to-pink-900/20 shadow-sm px-4 md:px-8 lg:px-8 dark:border-gray-700 mx-auto flex justify-center z-10">
-            <div className="sm:absolute bg-[#f2f2f2] w-full max-w-6xl mx-auto dark:sm:bg-slate-700 flex items-center justify-between sm:border sm:rounded-full px-10 py-2 sm:mt-8 z-20">
+            <div className=" sm:absolute bg-[#f2f2f2] w-full max-w-6xl mx-auto dark:sm:bg-slate-700 flex items-center justify-between sm:border sm:rounded-full px-10 py-2 sm:mt-8 z-20">
               <div className="flex items-center">
                 <Link href="/">
                   <Image
