@@ -110,7 +110,7 @@ export function HeroSlider() {
 
           {/* Content */}
           <div className="relative z-10 h-full flex items-center justify-center">
-            <div className="max-w-6xl mx-auto px-4 text-center text-white">
+            <div className="max-w-6xl mx-auto px-4 sm:pt-12 text-center text-white">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6">
                 {renderTitle(slide.title, slide.highlightedWords)}
               </h1>
