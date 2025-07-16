@@ -65,65 +65,7 @@ export default function HomePage() {
 
       {/* Services Section */}
       <ServicesSection />
-
-      {/* Why Choose Us Section */}
-      <section className="bg-white dark:bg-gray-800 py-16 px-4 md:px-8 lg:px-16">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Why Choose Us?</h2>
-            <p className="text-gray-600 text-lg dark:text-gray-400 max-w-2xl mx-auto">
-              We are not just another agency. We are specialized growth partners invested in your success.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6 mb-12">
-            {/* Card 1 */}
-            <div className="bg-[#f5f6f9] dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-700">
-              <div className="w-12 h-12 bg-white dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4">
-                <Wind className="w-6 h-6 dark:text-purple-400" />
-              </div>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                Deep knowledge of e-commerce and healthcare markets.
-              </p>
-            </div>
-
-            {/* Card 2 */}
-            <div className="bg-[#f5f6f9] dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-700">
-              <div className="w-12 h-12 bg-white dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4">
-                <TrendingUp className="w-6 h-6 dark:text-purple-400" />
-              </div>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">Track record of measurable growth.</p>
-            </div>
-
-            {/* Card 3 */}
-            <div className="bg-[#f5f6f9] dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-700">
-              <div className="w-12 h-12 bg-white dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4">
-                <Trello className="w-6 h-6 dark:text-purple-400" />
-              </div>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">Every decision backed by data and analytics.</p>
-            </div>
-
-            {/* Card 4 */}
-            <div className="bg-[#f5f6f9] dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-700">
-              <div className="w-12 h-12 bg-white dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4">
-                <Target className="w-6 h-6 dark:text-purple-400" />
-              </div>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                No cookie-cutter approaches, 100% custom strategies
-              </p>
-            </div>
-          </div>
-
-          <div className="text-center">
-            <p className="text-xl text-gray-700 dark:text-gray-300 mb-6">Ready to Transform Your Growth?</p>
-            <Button className="bg-[#eb4e5f] hover:bg-white hover:text-[#eb4e5f] border border-[#eb4e5f] text-white md:px-8">Request Custom Strategy</Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Process Section */}
-      <ProcessSection />
-
+      
       {/* Client Testimonials Section */}
       <section className="bg-white dark:bg-gray-900 py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto">
@@ -266,6 +208,64 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Why Choose Us Section */}
+      <section className="bg-white dark:bg-gray-800 py-16 px-4 md:px-8 lg:px-16">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Why Choose Us?</h2>
+            <p className="text-gray-600 text-lg dark:text-gray-400 max-w-2xl mx-auto">
+              We are not just another agency. We are specialized growth partners invested in your success.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
+            {/* Card 1 */}
+            <div className="bg-[#f5f6f9] dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-700">
+              <div className="w-12 h-12 bg-white dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4">
+                <Wind className="w-6 h-6 dark:text-purple-400" />
+              </div>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                Deep knowledge of e-commerce and healthcare markets.
+              </p>
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-[#f5f6f9] dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-700">
+              <div className="w-12 h-12 bg-white dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4">
+                <TrendingUp className="w-6 h-6 dark:text-purple-400" />
+              </div>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">Track record of measurable growth.</p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-[#f5f6f9] dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-700">
+              <div className="w-12 h-12 bg-white dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4">
+                <Trello className="w-6 h-6 dark:text-purple-400" />
+              </div>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">Every decision backed by data and analytics.</p>
+            </div>
+
+            {/* Card 4 */}
+            <div className="bg-[#f5f6f9] dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-700">
+              <div className="w-12 h-12 bg-white dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4">
+                <Target className="w-6 h-6 dark:text-purple-400" />
+              </div>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                No cookie-cutter approaches, 100% custom strategies
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <p className="text-xl text-gray-700 dark:text-gray-300 mb-6">Ready to Transform Your Growth?</p>
+            <Button className="bg-[#eb4e5f] hover:bg-white hover:text-[#eb4e5f] border border-[#eb4e5f] text-white md:px-8">Request Custom Strategy</Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <ProcessSection />
 
       {/* FAQ/Consultation Section */}
       <section className="bg-gray-50 dark:bg-gray-800 py-16 px-4 md:px-8 lg:px-16">
