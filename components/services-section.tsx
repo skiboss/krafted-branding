@@ -31,26 +31,29 @@ export default function ServicesSection() {
 
   const ecommerceServices = [
     "Paid Ads",
-    "SEO & Content",
-    "Email Marketing",
-    "Turnkey Supply",
+    "SEO - Rank Your Brand on the First Page of Google",
+    "Creative Solutions",
+    "Merchandising / Turnkey Supply",
+    "CRO - Conversion Rate Optimization",
   ]
 
   const additionalEcommerceServices = [
-    "Conversion Rate Optimization",
-    "Retargeting Campaigns",
+    "Overall Brand Growth",
   ]
 
   const healthcareServices = [
-    "Local SEO",
-    "Content Marketing",
-    "Health Tech Growth",
-    "Reputation Management",
+    "Paid Ads",
+    "SEO - Rank Your Brand on the First Page of Google",
+    "Creative Solutions",
+    "Merchandising / Turnkey Supply",
+    "CRO - Conversion Rate Optimization",
   ]
 
   const additionalHealthcareServices = [
-    "Patient Acquisition Funnels",
-    "Healthcare Analytics",
+    "Overall Brand Growth",
+    "Health Tech Growth",
+    "Patient Acquisition funnel",
+    "Reputation Management",
   ]
 
   return (

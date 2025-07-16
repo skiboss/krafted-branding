@@ -72,7 +72,7 @@ export default function HomePage() {
           <div className="text-center mb-10">
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Why Choose Us?</h2>
             <p className="text-gray-600 text-lg dark:text-gray-400 max-w-2xl mx-auto">
-              We're not just another agency. We're growth partners invested in your success
+              We are not just another agency. We are specialized growth partners invested in your success.
             </p>
           </div>
 
@@ -100,7 +100,7 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-white dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4">
                 <Trello className="w-6 h-6 dark:text-purple-400" />
               </div>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">Every decision backed by analytics.</p>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">Every decision backed by data and analytics.</p>
             </div>
 
             {/* Card 4 */}
@@ -146,6 +146,27 @@ export default function HomePage() {
                   className="rounded-full"
                 />
                 <div>
+                  <h4 className="font-semibold dark:text-white">Jenny</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">CMO, Focallure</p>
+                </div>
+              </div>
+              <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4">
+                "Overall, Krafted Branding's blend of creativity, analytics, and relentless optimization across Meta and Google ads has been the backbone
+                of our brand's success. They've not only delivered measurable ROI but also empowered us to focus more on satisfying our customers."
+              </p>
+            </div>
+
+            {/* Testimonial 2 */}
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
+              <div className="flex items-center gap-4 mb-4">
+                <Image
+                  src="/placeholder.svg?height=50&width=50"
+                  alt="Client"
+                  width={50}
+                  height={50}
+                  className="rounded-full"
+                />
+                <div>
                   <h4 className="font-semibold dark:text-white">Neesh R.</h4>
                   <p className="text-sm text-gray-600 dark:text-gray-400">Founder, HealthActivator</p>
                 </div>
@@ -156,7 +177,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            {/* Testimonial 2 */}
+            {/* Testimonial 3 */}
             <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
               <div className="flex items-center gap-4 mb-4">
                 <Image
@@ -178,7 +199,31 @@ export default function HomePage() {
               </p>
             </div>
 
-            {/* Testimonial 3 */}
+            {/* Testimonial 4 */}
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
+              <div className="flex items-center gap-4 mb-4">
+                <Image
+                  src="/placeholder.svg?height=50&width=50"
+                  alt="Client"
+                  width={50}
+                  height={50}
+                  className="rounded-full"
+                />
+                <div>
+                  <h4 className="font-semibold dark:text-white">Neesh R.</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Founder, HealthActivator</p>
+                </div>
+              </div>
+              <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4">
+                "We started working with Krafted branding for our first brand - Klex Beauty and we were blown by their Meta and Goodle
+                Ads mastery delivering consistent great ROAS and scaling us to six figure revenue in months and this success funded two 
+                new brands - our launches of Dank brand (fragrance diffusers) and Tiblends (wellness brand), where they adapted strategies
+                seamlessly - creative led campaigns for Dank yielding 5+ ROAS and fitness-focused shopping ads for Tiblends boosting conversions
+                40%. Krafted's data-driven tweaks turned ads into profit machines across all brands."
+              </p>
+            </div>
+
+            {/* Testimonial 5 */}
             <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
               <div className="flex items-center gap-4 mb-4">
                 <Image
@@ -198,7 +243,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            {/* Testimonial 4 */}
+            {/* Testimonial 6 */}
             <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
               <div className="flex items-center gap-4 mb-4">
                 <Image
@@ -218,49 +263,6 @@ export default function HomePage() {
               </p>
             </div>
 
-            {/* Testimonial 5 */}
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
-              <div className="flex items-center gap-4 mb-4">
-                <Image
-                  src="/placeholder.svg?height=50&width=50"
-                  alt="Client"
-                  width={50}
-                  height={50}
-                  className="rounded-full"
-                />
-                <div>
-                  <h4 className="font-semibold dark:text-white">Emily</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Email marketing went from an afterthought to our #1 sales driver
-                  </p>
-                </div>
-              </div>
-              <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4">
-                "We now drive 28% of our monthly revenue from email. Krafted Branding automated our campaigns and
-                revised cold leads effortlessly."
-              </p>
-            </div>
-
-            {/* Testimonial 6 */}
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
-              <div className="flex items-center gap-4 mb-4">
-                <Image
-                  src="/placeholder.svg?height=50&width=50"
-                  alt="Client"
-                  width={50}
-                  height={50}
-                  className="rounded-full"
-                />
-                <div>
-                  <h4 className="font-semibold dark:text-white">David U.</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">CMO, PetRock Supplies</p>
-                </div>
-              </div>
-              <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4">
-                "Krafted helped us rethink our messaging targeting and user experience. We saw a 2x revenue and 3x
-                engagement."
-              </p>
-            </div>
           </div>
         </div>
       </section>

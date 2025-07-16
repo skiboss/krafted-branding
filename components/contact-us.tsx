@@ -34,15 +34,15 @@ export function ContactForm() {
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
                   <HouseIcon className="h-5 w-5 text-white/80" />
-                  <span>Address</span>
+                  <span>30N Gould St Ste R Sheridan, WY 82801</span>
                 </div>
                 <div className="flex items-center gap-4">
                   <Phone className="h-5 w-5 text-white/80" />
-                  <span>Phone Number</span>
+                  <span>+1 (307) 218-5698</span>
                 </div>
                 <div className="flex items-center gap-4">
                   <Mail className="h-5 w-5 text-white/80" />
-                  <span>Email Address</span>
+                  <span><a href="mailto:hello@hraftedbranding.com">hello@kraftedbranding.com</a></span>
                 </div>
               </div>
             </div>

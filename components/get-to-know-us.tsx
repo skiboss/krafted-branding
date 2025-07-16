@@ -92,20 +92,19 @@ export function GetToKnowSection() {
     <section ref={sectionRef} className="py-16 px-4 max-w-5xl mx-auto">
       {/* Header */}
       <div className="text-center mb-12">
-        <p
+        {/* <p
           className={`text-gray-600 font-medium text-xl mb-4 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
           Get to Know Us
-        </p>
+        </p> */}
         <h2
           className={`text-3xl md:text-4xl font-bold text-gray-900 leading-tight transition-all duration-1000 delay-200 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Built to Empower E-commerce and <br />
-          Healthcare Leaders
+          Built to Empower E-commerce, Healthcare and wellness brands to market leaders
         </h2>
       </div>
 
@@ -119,9 +118,9 @@ export function GetToKnowSection() {
           }`}
         >
           <CardContent className="p-6">
-            <h3 className="text-xl font-semibold text-green-800 mb-2 md:mb-10">Satisfied Customer</h3>
+            <h3 className="text-xl font-semibold text-green-800 mb-2 md:mb-10">Satisfied Customers</h3>
             <div className="text-green-800">
-              <AnimatedCounter end={100} suffix="+" duration={2500} />
+              <AnimatedCounter end={32} suffix="+" duration={2500} />
             </div>
           </CardContent>
         </Card>
@@ -181,7 +180,7 @@ export function GetToKnowSection() {
           <CardContent className="p-6">
             <h3 className="text-xl font-semibold text-gray-900 mb-3">About Us</h3>
             <p className="text-gray-600 text-base leading-relaxed">
-              Born from the visionaries behind Matchplug Agency, Krafted Branding exists to help growth-hungry
+              Born from the visionaries behind <a className="text-[#455dbd] hover:text-gray-600" href="https://matchplug.com" target="_blank">Matchplug Agency</a>, Krafted Branding exists to help growth-hungry
               businesses scale. Whether you're running an online store or managing a clinic, we bring strategy,
               creativity, and execution together to help you win.
             </p>
@@ -212,7 +211,7 @@ export function GetToKnowSection() {
           <CardContent className="p-6">
             <h3 className="text-lg font-semibold text-blue-800 mb-2 md:mb-24">Projects</h3>
             <div className="text-blue-800">
-              <AnimatedCounter end={1} suffix="K+" duration={2500} />
+              <AnimatedCounter end={88} suffix="+" duration={2500} />
             </div>
           </CardContent>
         </Card>
