@@ -35,7 +35,10 @@ export default function ContactPage() {
           </p>
 
           <div className="">
-            <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white px-8 md:px-12 py-4 rounded-md font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300">Book Consultation</Button>
+            <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white px-8 md:px-12 py-4 rounded-md font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300">
+              <a href="https://calendly.com/chris-ojukoko-jnr/30min" target="_blank">Book Consultation</a>
+
+            </Button>
           </div>
         </div>
       </section>

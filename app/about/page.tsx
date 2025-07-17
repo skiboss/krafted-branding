@@ -56,7 +56,7 @@ export default function AboutPage() {
                   size="lg"
                   className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-md font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  Book a Free Audit Call
+                  <a href="https://calendly.com/chris-ojukoko-jnr/30min" target="_blank">Book a Free Audit Call</a>
                 </Button>
               </div>
             </div>

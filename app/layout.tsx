@@ -8,7 +8,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Facebook, Instagram, Twitter } from "lucide-react";
+import { Facebook, Instagram, Linkedin, MessageSquareIcon, Twitter } from "lucide-react";
 
 
 import { PageLoader } from "@/components/page-loader"
@@ -106,13 +106,13 @@ export default function RootLayout({
               {/* Logo and Tagline */}
               <div>
                 <div className="mb-4">
-                  <Image
+                  <a href="/"><Image
                     src="/logo.png"
                     alt="Krafted Branding Logo"
                     width={100}
                     height={30}
                     className="mb-4 mx-auto md:mx-0"
-                  />
+                  /></a>
                 </div>
                 <h3 className="font-bold mb-1 dark:text-white">
                   Transform Your Revenue:
@@ -225,7 +225,7 @@ export default function RootLayout({
               </div>
               <div className="flex space-x-4 mt-4 md:mt-0 md:pe-8">
                 <Link
-                  href="#"
+                  href="https://www.facebook.com/share/1HwGA2muHx/?mibextid=wwXIfr"
                   className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
                 >
                   <Facebook className="h-5 w-5" />
@@ -234,13 +234,13 @@ export default function RootLayout({
                   href="#"
                   className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
                 >
-                  <Instagram className="h-5 w-5" />
+                  <MessageSquareIcon className="h-5 w-5" />
                 </Link>
                 <Link
-                  href="#"
+                  href="https://www.linkedin.com/company/krafted-branding"
                   className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
                 >
-                  <Twitter className="h-5 w-5" />
+                  <Linkedin className="h-5 w-5" />
                 </Link>
               </div>
             </div>

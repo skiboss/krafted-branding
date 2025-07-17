@@ -65,7 +65,7 @@ export default function HomePage() {
 
       {/* Services Section */}
       <ServicesSection />
-      
+
       {/* Client Testimonials Section */}
       <section className="bg-white dark:bg-gray-900 py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto">
@@ -152,8 +152,8 @@ export default function HomePage() {
                   className="rounded-full"
                 />
                 <div>
-                  <h4 className="font-semibold dark:text-white">Neesh R.</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Founder, HealthActivator</p>
+                  <h4 className="font-semibold dark:text-white">Chris</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Founder, Klex Beauty</p>
                 </div>
               </div>
               <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4">
@@ -197,7 +197,7 @@ export default function HomePage() {
                 />
                 <div>
                   <h4 className="font-semibold dark:text-white">Sarah M.</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Founder, HoneyGlow Skincare</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Founder, Balding</p>
                 </div>
               </div>
               <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4">

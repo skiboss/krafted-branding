@@ -55,7 +55,7 @@ export function BookCall() {
       </div>
 
       <Button className="w-full bg-[#14010f] border border-[#14010f] hover:bg-white text-white hover:text-[#14010f]">
-        Book Call
+        <a href="https://calendly.com/chris-ojukoko-jnr/30min" target="_blank">Book Call</a>
       </Button>
     </div>
   );
