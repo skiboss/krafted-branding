@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 export function BookCall() {
   return (
-    <div className="bg-[url(../public/book-bg.png)] bg-cover bg-center rounded-2xl p-8">
+    <div className="bg-[url(../public/book-bg.png)] bg-cover bg-center rounded-2xl pt-16 px-10">
       <div className="mb-6">
         <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
           Book a{" "}
@@ -54,7 +54,7 @@ export function BookCall() {
         </div>
       </div>
 
-      <Button className="w-full bg-[#14010f] border border-[#14010f] hover:bg-white text-white hover:text-[#14010f]">
+      <Button className="w-full bg-fuchsia-950 border-2 text-base border-fuchsia-950 hover:bg-white text-white hover:text-fuchsia-950">
         <a href="https://calendly.com/chris-ojukoko-jnr/30min" target="_blank">Book Call</a>
       </Button>
     </div>

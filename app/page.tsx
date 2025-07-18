@@ -10,7 +10,7 @@ import { MapPin, Phone, Mail, Facebook, Instagram, Twitter, Check, TrendingUp, B
 import Link from "next/link"
 import { ScrollToTop } from "@/components/scroll-to-top"
 import { BookCall } from "@/components/book-call"
-import { ContactForm } from "@/components/contact-us"
+import { ContactSection } from "@/components/contact-us"
 import ServicesSection from "@/components/services-section"
 import { HeroSlider } from "@/components/hero-slider"
 import { GetToKnowSection } from "@/components/get-to-know-us"
@@ -19,6 +19,7 @@ import ProcessSection from "@/components/process-section"
 
 import { PageLoader } from "@/components/page-loader"
 import { useLoading } from "@/hooks/use-loading"
+import { UniqueFormula } from "@/components/unique-formula"
 
 export default function HomePage() {
   
@@ -70,8 +71,8 @@ export default function HomePage() {
       <section className="bg-white dark:bg-gray-900 py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">What Our Clients Say...</h2>
-            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            <h2 className="text-4xl font-semibold text-gray-900 dark:text-white mb-4">What Our Clients Say...</h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto">
               Don't just take our word for it. Hear how our clients turned marketing into measurable momentum
             </p>
           </div>
@@ -259,20 +260,39 @@ export default function HomePage() {
 
           <div className="text-center">
             <p className="text-xl text-gray-700 dark:text-gray-300 mb-6">Ready to Transform Your Growth?</p>
-            <Button className="bg-[#eb4e5f] hover:bg-white hover:text-[#eb4e5f] border border-[#eb4e5f] text-white md:px-8">Request Custom Strategy</Button>
+            <Button className="bg-[#541349] hover:border-2 hover:border-[#541349] text-white hover:text-[#541349] hover:bg-white border md:px-8">Request Custom Strategy</Button>
           </div>
         </div>
       </section>
 
       {/* Process Section */}
-      <ProcessSection />
+      {/* <ProcessSection /> */}
+
+      <div className="py-10 px-4 max-w-5xl mx-auto" id="process">
+          {/* Header Badge */}
+      <div className="flex mb-8">
+        <div
+          className={`bg-[#3730A3] text-white px-6 py-2 rounded-full flex items-center gap-2 shadow-lg transition-all duration-1000 opacity-100 translate-y-0`}
+        >
+          <div className="w-4 h-4 bg-fuchsia-950 rounded-full border-2 border-white"></div>
+          <span className="font-medium text-sm uppercase tracking-wide">How We Do This</span>
+          <div className="w-4 h-4 bg-fuchsia-950 rounded-full border-2 border-white"></div>
+        </div>
+      </div>
+
+      {/* Main Heading */}
+      <h2 className="text-3xl md:text-4xl font-bold text-center md:text-start md:w-3/5 mb-12 text-gray-900 leading-tight">
+        Here's Our Proven Growth Formula
+      </h2>
+      </div>
+        <UniqueFormula />
 
       {/* FAQ/Consultation Section */}
-      <section className="bg-gray-50 dark:bg-gray-800 py-16 px-4 md:px-8 lg:px-16">
-        <div className="max-w-7xl mx-auto">
+      <section className="bg-white dark:bg-gray-800 py-16 px-4 md:px-8 lg:px-16">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Got Questions?</h2>
-            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-5xl mx-auto">
               We've answered the most common ones here, and if you need tailored advice, you can also book a quick call
               for a free business audit.
             </p>
@@ -280,41 +300,6 @@ export default function HomePage() {
 
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Left Column - Consultation Booking */}
-            {/* <div className="bg-[url(../public/book-section.png)] bg-cover bg-center rounded-2xl p-8">
-              <div className="mb-6">
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                  Book a <span className="text-[#541349] dark:text-purple-400">30-min</span>
-                </h3>
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex gap-2">Consultation Call <i><PhoneCall /></i></h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-6 text-2xl">Get a quick audit of your business.</p>
-              </div>
-
-              <div className="mb-6">
-                <h4 className="font-semibold text-gray-900 dark:text-white mb-4">What we'd be doing for 30 mins</h4>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-3">
-                    <div className="w-4 h-4 bg-transparent flex items-center justify-center">
-                      <CheckCircle className="w-full text-dark" />
-                    </div>
-                    <span className="text-gray-700 dark:text-gray-300">Actionable Insights, Fast</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-4 h-4 bg-transparent flex items-center justify-center">
-                      <CheckCircle className="w-full text-dark" />
-                    </div>
-                    <span className="text-gray-700 dark:text-gray-300">Industry-Specific Growth Strategy</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-4 h-4 bg-transparent flex items-center justify-center">
-                      <CheckCircle className="w-full text-dark" />
-                    </div>
-                    <span className="text-gray-700 dark:text-gray-300">Zero-Pressure Strategy Preview</span>
-                  </div>
-                </div>
-              </div>
-
-              <Button className="w-full bg-[#541349] border border-[#541349] hover:bg-white text-white hover:text-[#541349]">Book Call</Button>
-            </div> */}
             <BookCall />
 
             {/* Right Column - FAQ */}
@@ -431,7 +416,7 @@ export default function HomePage() {
 
       {/* Contact Form Section */}
       {/* <section className="bg-gradient-to-r from-purple-900 to-purple-800 text-white py-16 px-4 md:px-8 lg:px-16"> */}
-      <ContactForm />
+      <ContactSection />
 
 
       <ScrollToTop />

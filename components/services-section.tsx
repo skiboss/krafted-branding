@@ -65,9 +65,9 @@ export default function ServicesSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <div className="w-4 h-4 bg-red-500 rounded-full border-2 border-white"></div>
+          <div className="w-4 h-4 bg-[#541349] rounded-full border-2 border-white"></div>
           <span className="font-medium text-sm uppercase tracking-wide">OUR SERVICES</span>
-          <div className="w-4 h-4 bg-red-500 rounded-full border-2 border-white"></div>
+          <div className="w-4 h-4 bg-[#541349] rounded-full border-2 border-white"></div>
         </div>
       </div>
 
@@ -109,7 +109,7 @@ export default function ServicesSection() {
               <div className="mt-6 flex justify-end">
                 <button
                   onClick={() => setShowMoreEcommerce(!showMoreEcommerce)}
-                  className="text-red-500 hover:text-red-600 font-medium text-sm transition-colors flex items-center gap-1"
+                  className="text-[#541349] hover:text-fuchsia-900 font-medium text-sm transition-colors flex items-center gap-1"
                 >
                   {showMoreEcommerce ? "See Less" : "See More"}
                   {showMoreEcommerce ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
@@ -150,7 +150,7 @@ export default function ServicesSection() {
               <div className="mt-6 flex justify-end">
                 <button
                   onClick={() => setShowMoreHealthcare(!showMoreHealthcare)}
-                  className="text-red-500 hover:text-red-600 font-medium text-sm transition-colors flex items-center gap-1"
+                  className="text-[#541349] hover:text-fuchsia-900 font-medium text-sm transition-colors flex items-center gap-1"
                 >
                   {showMoreHealthcare ? "See Less" : "See More"}
                   {showMoreHealthcare ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
@@ -163,7 +163,7 @@ export default function ServicesSection() {
 
       {/* Book Consultation Button */}
       <div className="flex justify-center">
-        <Button className="bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-md font-medium shadow-lg">
+        <Button className="bg-[#541349] hover:bg-fuchsia-950 text-white px-8 py-3 rounded-md font-medium shadow-lg">
           Book Consultation
         </Button>
       </div>

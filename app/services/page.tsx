@@ -36,7 +36,7 @@ export default function ServicePage() {
                   <div className="space-y-11">
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-normal text-gray-900 leading-tight sm:leading-normal">
                       Solutions Built for <br />
-                        <span className="text-red-500">
+                        <span className="text-fuchsia-950">
                         Growth
                       </span>-Driven <br />
                       Businesses
@@ -50,7 +50,7 @@ export default function ServicePage() {
                   <div className="pt-4">
                     <Button
                       size="lg"
-                      className="bg-red-500 hover:bg-red-600 text-white px-8 md:px-12 py-4 rounded-md font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                      className="bg-fuchsia-950 hover:bg-fuchsia-950/50 text-white px-8 md:px-12 py-4 rounded-md font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300"
                     >
                       Request a Custom Strategy
                     </Button>

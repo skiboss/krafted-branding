@@ -38,7 +38,7 @@ export default function AboutPage() {
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-normal text-gray-900 leading-normal sm:leading-loose">
                   Built to Help <br />
                   Visionaries{" "}
-                  <span className="text-red-500">
+                  <span className="text-fuchsia-950">
                     Scale
                     <br />
                     Smarter{" "}
@@ -54,7 +54,7 @@ export default function AboutPage() {
               <div className="pt-4">
                 <Button
                   size="lg"
-                  className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-md font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="bg-fuchsia-950 hover:bg-fuchsia-950/70 text-white px-10 py-5 rounded-md font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   <a href="https://calendly.com/chris-ojukoko-jnr/30min" target="_blank">Book a Free Audit Call</a>
                 </Button>
@@ -260,7 +260,7 @@ export default function AboutPage() {
               <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 mb-6">
                 Ready to Transform Your Growth?
               </p>
-              <Button className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-md font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300">
+              <Button className="bg-fuchsia-950 hover:bg-fuchsia-950/70 text-white px-8 py-4 rounded-md font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   Request Custom Strategy
               </Button>
             </div>
@@ -282,7 +282,7 @@ export default function AboutPage() {
 
           <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 md:p-12 text-center">
             <blockquote className="text-lg border p-3 rounded-xl text-gray-700 dark:text-gray-300 leading-relaxed max-w-2xl mx-auto">
-              <span className="text-6xl text-[#000] dark:text-[#541349] ">
+              <span className="text-6xl text-[#000] dark:text-fuchsia-950 ">
                 “
               </span>
               We started Krafted Branding with one belief — performance
@@ -300,7 +300,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-[#1f0104] text-white py-16 px-4 md:px-8 lg:px-16">
+      <section className="bg-fuchsia-950 text-white py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#fee5f8] mb-6">
             Marketing isn't magic, it's maths and messaging

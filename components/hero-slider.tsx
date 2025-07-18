@@ -81,7 +81,7 @@ export function HeroSlider() {
   const renderTitle = (title: string, highlightedWords: string[]) => {
     let processedTitle = title
     highlightedWords.forEach((word) => {
-      processedTitle = processedTitle.replace(`{${word}}`, `<span class="text-red-500">${word}</span>`)
+      processedTitle = processedTitle.replace(`{${word}}`, `<span class="text-[#541349]">${word}</span>`)
     })
     return <span dangerouslySetInnerHTML={{ __html: processedTitle }} />
   }
@@ -105,27 +105,27 @@ export function HeroSlider() {
               className="object-cover"
               priority={index === 0}
             />
-            <div className="absolute inset-0 bg-black/50" />
+            {/* <div className="absolute inset-0 bg-[#f5f5f5]/50" /> */}
           </div>
 
           {/* Content */}
           <div className="relative z-10 h-full flex items-center justify-center">
-            <div className="max-w-6xl mx-auto px-4 sm:pt-12 text-center text-white">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6">
+            <div className="max-w-5xl mx-auto px-4 sm:pt-12 text-center">
+              <h1 className="text-4xl md:text-4xl lg:text-6xl font-semibold mb-6">
                 {renderTitle(slide.title, slide.highlightedWords)}
               </h1>
               <p className="text-lg md:text-xl mb-8 max-w-4xl mx-auto opacity-90">{slide.subtitle}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
                   size="lg"
-                  className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-md font-medium text-lg shadow-lg"
+                  className="bg-[#541349] hover:bg-white hover:border-2 hover:border-[#541349] text-white hover:text-[#541349] px-10 py-5 rounded-md font-medium text-lg shadow-lg"
                 >
                   {slide.primaryButton}
                 </Button>
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-md font-medium text-lg bg-transparent"
+                  className="border-2 border-[#541349] text-[#541349] hover:bg-white hover:text-[#541349] px-10 py-5 rounded-md font-medium text-lg bg-transparent"
                 >
                   {slide.secondaryButton}
                 </Button>

@@ -35,10 +35,10 @@ export function LoadingSpinner({ size = "md", text = "Loading...", showProgress 
       {/* Animated Logo Spinner */}
       <div className="relative">
         <div
-          className={`${sizeClasses[size]} border-4 border-gray-200 border-t-red-500 rounded-full animate-spin`}
+          className={`${sizeClasses[size]} border-4 border-gray-200 border-t-fuchsia-950 rounded-full animate-spin`}
         ></div>
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-6 h-6 bg-gradient-to-br from-purple-600 to-pink-600 rounded flex items-center justify-center">
+          <div className="w-6 h-6 bg-fuchsia-950/70 rounded flex items-center justify-center">
             <span className="text-white font-bold text-xs">K</span>
           </div>
         </div>
@@ -51,7 +51,7 @@ export function LoadingSpinner({ size = "md", text = "Loading...", showProgress 
           <div className="mt-2">
             <div className="w-48 h-2 bg-gray-200 rounded-full overflow-hidden">
               <div
-                className="h-full bg-gradient-to-r from-red-500 to-pink-500 transition-all duration-300 ease-out"
+                className="h-full bg-fuchsia-950 transition-all duration-300 ease-out"
                 style={{ width: `${Math.min(progress, 100)}%` }}
               ></div>
             </div>
@@ -62,9 +62,9 @@ export function LoadingSpinner({ size = "md", text = "Loading...", showProgress 
 
       {/* Pulsing Dots */}
       <div className="flex space-x-1">
-        <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
-        <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" style={{ animationDelay: "0.2s" }}></div>
-        <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" style={{ animationDelay: "0.4s" }}></div>
+        <div className="w-2 h-2 bg-fuchsia-950 rounded-full animate-pulse"></div>
+        <div className="w-2 h-2 bg-fuchsia-950 rounded-full animate-pulse" style={{ animationDelay: "0.2s" }}></div>
+        <div className="w-2 h-2 bg-fuchsia-950 rounded-full animate-pulse" style={{ animationDelay: "0.4s" }}></div>
       </div>
     </div>
   )

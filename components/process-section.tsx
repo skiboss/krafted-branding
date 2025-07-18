@@ -79,9 +79,9 @@ export default function ProcessSection() {
         <div
           className={`bg-[#3730A3] text-white px-6 py-2 rounded-full flex items-center gap-2 shadow-lg transition-all duration-1000 opacity-100 translate-y-0`}
         >
-          <div className="w-4 h-4 bg-red-500 rounded-full border-2 border-white"></div>
+          <div className="w-4 h-4 bg-fuchsia-950 rounded-full border-2 border-white"></div>
           <span className="font-medium text-sm uppercase tracking-wide">How We Do This</span>
-          <div className="w-4 h-4 bg-red-500 rounded-full border-2 border-white"></div>
+          <div className="w-4 h-4 bg-fuchsia-950 rounded-full border-2 border-white"></div>
         </div>
       </div>
 

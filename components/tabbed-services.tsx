@@ -171,7 +171,7 @@ export default function TabbedServices() {
         {/* Call to Action */}
         <div className="text-center mt-12">
           <h3 className="text-xl font-semibold text-gray-900 mb-4">Ready to Transform Your Growth?</h3>
-          <Button className="bg-red-500 hover:bg-red-600 text-white px-10 py-3 rounded-md font-medium transition-all duration-500 transform hover:scale-105 shadow-lg hover:shadow-xl">
+          <Button className="bg-fuchsia-950 hover:bg-fuchsia-950/50 text-white px-10 py-3 rounded-md font-medium transition-all duration-500 transform hover:scale-105 shadow-lg hover:shadow-xl">
             Request Custom Strategy
           </Button>
         </div>

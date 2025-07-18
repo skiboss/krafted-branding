@@ -12,7 +12,7 @@ import { MobileNav } from "@/components/mobile-nav"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { ScrollToTop } from "@/components/scroll-to-top"
 import { BookCall } from "@/components/book-call"
-import { ContactForm } from "@/components/contact-us"
+import { ContactSection } from "@/components/contact-us"
 
 
 import { PageLoader } from "@/components/page-loader"
@@ -29,13 +29,13 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-5xl sm:pt-24 mx-auto">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-normal text-gray-900 leading-tight sm:leading-normal">Contact <span className="text-[#eb4e5f]">Us</span></h1>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-normal text-gray-900 leading-tight sm:leading-normal">Contact <span className="text-fuchsia-950">Us</span></h1>
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-md sm:text-xl pt-5 md:py-6">
             Let’s create a custom marketing plan to take your e-commerce or healthcare brand to the next level.  
           </p>
 
           <div className="">
-            <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white px-8 md:px-12 py-4 rounded-md font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300">
+            <Button size="lg" className="bg-fuchsia-950 hover:bg-white text-white hover:text-fuchsia-950 hover:border-2 px-8 md:px-12 py-4 rounded-md font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300">
               <a href="https://calendly.com/chris-ojukoko-jnr/30min" target="_blank">Book Consultation</a>
 
             </Button>
@@ -144,7 +144,7 @@ export default function ContactPage() {
         </div>  
       </section>
       
-      <ContactForm />
+      <ContactSection />
       <ScrollToTop />
   </div>
   )

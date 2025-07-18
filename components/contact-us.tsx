@@ -6,16 +6,17 @@ import { Input } from "@/components/ui/input"
 import { Select } from "@radix-ui/react-select";
 import { SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 import { Textarea } from "./ui/textarea";
+import { ContactForm } from "./contact-form";
 
-export function ContactForm() {
+export function ContactSection() {
   return (
     /* Contact Form Section */
     //  <section className="bg-gradient-to-r from-purple-900 to-purple-800 text-white py-16 px-4 md:px-8 lg:px-16"> 
-      <section className="bg-[#1f0104] text-white py-16 px-4 md:px-8 lg:px-16" id="contact-form">
+      <section className="bg-fuchsia-950 text-white py-16 px-4 md:px-8 lg:px-16" id="contact-form">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-medium mb-4">Contact Us</h2>
-            <p className="text-white/80 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
+            <p className="text-white/80 text-lg max-w-5xl mx-auto">
               We craft data-driven, results-obsessed strategies to grow your revenue and your brand in the e-commerce
               and healthcare industries
             </p>
@@ -49,6 +50,7 @@ export function ContactForm() {
 
             {/* Right Column - Contact Form */}
             <div className="bg-white/5 rounded-lg p-6">
+
               <div className="grid sm:grid-cols-2 gap-4 mb-4">
                 <div>
                   <label className="block mb-2 text-sm">Name</label>
@@ -99,6 +101,8 @@ export function ContactForm() {
 
               <Button className="w-full   bg-white text-[#14010f] hover:text-white hover:bg-[#14010f] hover:border">Send Message</Button>
             </div>
+            <div></div>
+            <ContactForm />
           </div>
         </div>
       </section>

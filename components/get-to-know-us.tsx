@@ -118,7 +118,7 @@ export function GetToKnowSection() {
           }`}
         >
           <CardContent className="p-6">
-            <h3 className="text-xl font-semibold text-green-800 mb-2 md:mb-10">Satisfied Customers</h3>
+            <h3 className="text-2xl font-semibold text-green-800 mb-2 md:mb-10">Satisfied Customers</h3>
             <div className="text-green-800">
               <AnimatedCounter end={32} suffix="+" duration={2500} />
             </div>
@@ -187,7 +187,7 @@ export function GetToKnowSection() {
           </CardContent>
         </Card>
 
-        {/* Projects Card - Column 4 */}
+        {/* Column 4 */}
         <div
           className={`relative overflow-hidden rounded-3xl shadow-lg transition-all duration-1000 delay-600 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
@@ -202,14 +202,14 @@ export function GetToKnowSection() {
           />
         </div>
 
-        {/* Experience Card - Column 5 */}
+        {/* Projects Card - Column 5 */}
         <Card
           className={`bg-blue-100 rounded-3xl border-blue-200 transition-all duration-1000 delay-1600 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
           <CardContent className="p-6">
-            <h3 className="text-lg font-semibold text-blue-800 mb-2 md:mb-24">Projects</h3>
+            <h3 className="text-2xl font-bold text-blue-800 mb-2 md:mb-24">Projects</h3>
             <div className="text-blue-800">
               <AnimatedCounter end={88} suffix="+" duration={2500} />
             </div>
