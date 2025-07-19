@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   title: "Krafted Branding | E-commerce & Healthcare Growth",
   description:
     "Transform your revenue with data-driven strategies for e-commerce and healthcare businesses.",
-  generator: "v0.dev",
+  // generator: "v0.dev",
   icons: {
-    icon: "../public/kb.png",
+    icon: "/favicon.ico",
   },
 };
 

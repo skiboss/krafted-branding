@@ -36,7 +36,7 @@ export function UniqueFormula() {
   return (
     <section
       ref={sectionRef}
-      className="py-16 px-4 bg-fuchsia-950 text-white relative overflow-hidden"
+      className="py-16 px-4 bg-[#541349] text-white relative overflow-hidden"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">

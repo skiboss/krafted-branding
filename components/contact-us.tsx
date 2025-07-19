@@ -24,7 +24,7 @@ export function ContactSection() {
 
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Left Column - Get In Touch */}
-            <div>
+            <div className="pt-16">
               <h3 className="text-2xl font-bold mb-3">Get In Touch</h3>
               <p className="text-white/80 mb-8">
                 Kickstart your journey to
@@ -49,7 +49,7 @@ export function ContactSection() {
             </div>
 
             {/* Right Column - Contact Form */}
-            <div className="bg-white/5 rounded-lg p-6">
+            {/* <div className="bg-white/5 rounded-lg p-6">
 
               <div className="grid sm:grid-cols-2 gap-4 mb-4">
                 <div>
@@ -99,9 +99,11 @@ export function ContactSection() {
                 />
               </div>
 
-              <Button className="w-full   bg-white text-[#14010f] hover:text-white hover:bg-[#14010f] hover:border">Send Message</Button>
+              <Button className="w-full bg-white text-[#14010f] hover:text-white
+               hover:bg-[#14010f] hover:border">
+                Send Message</Button>
             </div>
-            <div></div>
+            <div></div> */}
             <ContactForm />
           </div>
         </div>

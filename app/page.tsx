@@ -272,7 +272,7 @@ export default function HomePage() {
           {/* Header Badge */}
       <div className="flex mb-6">
         <div
-          className={`bg-[#3730A3] text-white px-6 py-2 rounded-full flex items-center gap-2 shadow-lg transition-all duration-1000 opacity-100 translate-y-0`}
+          className={`bg-[#3730A3] text-white px-6 py-2 rounded-full flex items-center gap-2 shadow-lg transition-all duration-1000 opacity-100 translate-y-0 mx-auto sm:mx-0`}
         >
           <div className="w-4 h-4 bg-fuchsia-950 rounded-full border-2 border-white"></div>
           <span className="font-medium text-sm uppercase tracking-wide">How We Do This</span>
@@ -281,7 +281,7 @@ export default function HomePage() {
       </div>
 
       {/* Main Heading */}
-      <h2 className="text-3xl md:text-4xl font-bold text-center md:text-start md:w-3/5 mb-4 text-gray-900 leading-tight">
+      <h2 className="text-3xl md:text-4xl font-bold text-center md:text-start md:w-3/5 mb-2 sm:mb-4 text-gray-900 leading-tight">
         Proven Growth Formula
       </h2>
       </div>
