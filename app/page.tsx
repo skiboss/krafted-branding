@@ -82,7 +82,7 @@ export default function HomePage() {
             <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
               <div className="flex items-center gap-4 mb-4">
                 <Image
-                  src="/placeholder.svg?height=50&width=50"
+                  src="/images/test6.png"
                   alt="Client"
                   width={50}
                   height={50}
@@ -103,7 +103,7 @@ export default function HomePage() {
             <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
               <div className="flex items-center gap-4 mb-4">
                 <Image
-                  src="/placeholder.svg?height=50&width=50"
+                  src="/images/test3.png"
                   alt="Client"
                   width={50}
                   height={50}
@@ -124,7 +124,7 @@ export default function HomePage() {
             <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
               <div className="flex items-center gap-4 mb-4">
                 <Image
-                  src="/placeholder.svg?height=50&width=50"
+                  src="/images/test5.png"
                   alt="Client"
                   width={50}
                   height={50}
@@ -146,7 +146,7 @@ export default function HomePage() {
             <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
               <div className="flex items-center gap-4 mb-4">
                 <Image
-                  src="/placeholder.svg?height=50&width=50"
+                  src="/images/test1.png"
                   alt="Client"
                   width={50}
                   height={50}
@@ -170,7 +170,7 @@ export default function HomePage() {
             <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
               <div className="flex items-center gap-4 mb-4">
                 <Image
-                  src="/placeholder.svg?height=50&width=50"
+                  src="/images/test7.png"
                   alt="Client"
                   width={50}
                   height={50}
@@ -190,7 +190,7 @@ export default function HomePage() {
             <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
               <div className="flex items-center gap-4 mb-4">
                 <Image
-                  src="/placeholder.svg?height=50&width=50"
+                  src="/images/test2.png"
                   alt="Client"
                   width={50}
                   height={50}

@@ -8,6 +8,7 @@ export interface ContactFormData {
   lastName: string
   email: string
   company: string
+  industry: string
   message: string
 }
 
@@ -16,7 +17,7 @@ export async function sendContactEmail(data: ContactFormData) {
     const { data: emailData, error } = await resend.emails.send({
       from: "Krafted Contact Form <noreply@kraftedbranding.com>",
       to: ["skiboss4life@gmail.com"], // Replace with your actual email
-      subject: `New Contact Form Submission from ${data.firstName} ${data.lastName}`,
+      subject: `New Contact Form Submission from ${data.firstName} ${data.lastName} - ${data.industry}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f9fafb;">
           <div style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">

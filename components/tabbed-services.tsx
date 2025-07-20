@@ -12,32 +12,41 @@ export default function TabbedServices() {
         "Meta, Google, and TikTok campaigns that turn ad spend into profitable revenue with data-driven targeting and optimization.",
     },
     {
-      title: "SEO & Content Marketing",
+      title: "SEO & Rank Your Brand on the First Page of Google",
       description:
         "Rank higher and convert more with content strategies that drive organic traffic and establish your brand as the go-to authority.",
     },
     {
-      title: "Email Marketing & Automation",
-      description:
-        "Nurture leads and boost repeat purchases with personalized email campaigns that turn subscribers into loyal customers.",
-    },
-    {
-      title: "Social Media Marketing",
+      title: "Conversion Rate Optimization",
       description:
         "Build brand awareness and drive sales through strategic social media campaigns that engage your audience and converts.",
+    },
+    {
+      title: "Creative Solutions"
+    },
+    {
+      title: "Overall Brand Growth"
+    },
+    {
+      title: "Turnkey Supply & Merchandising"
     },
   ]
 
   const healthcareServices = [
     {
-      title: "Patient Acquisition Campaigns",
+      title: "Patient Acquisition Funnel",
       description:
         "Attract new patients and grow your practice with digital PPC and social media campaigns that build trust and drive appointments.",
     },
     {
-      title: "Health Tech & Wellness Marketing",
+      title: "Health Tech Growth",
       description:
         "Boost sales for health-tech and wellness brands with specialized marketing that navigates regulatory requirements while driving growth.",
+    },
+    {
+      title: "SEO for Healthcare",
+      description:
+        "Dominate local search results to connect with patients in your area who are actively searching for your services.",
     },
     {
       title: "Medical Reputation Management",
@@ -45,13 +54,15 @@ export default function TabbedServices() {
         "Build trust with positive reviews and authentic branding that positions your practice as the preferred choice in your community.",
     },
     {
-      title: "Local SEO for Healthcare",
-      description:
-        "Dominate local search results to connect with patients in your area who are actively searching for your services.",
+      title: "Turnkey Supply & Merchandising"
     },
+    {title:"Creative Solutions"},
+    {title: "CRO - Conversion Rate Optimization"},
+    {title: "Overall Brand Growth"},
+    {title: "Reputation Management"},
   ]
 
-  const additionalEcommerceServices = ["Turnkey Supply & Merchandising", "Conversion Rate Optimization"]
+  // const additionalEcommerceServices = ["Turnkey Supply & Merchandising", "Conversion Rate Optimization"]
 
   const additionalHealthcareServices = ["Healthcare Content Marketing", "Telehealth Marketing"]
 
@@ -114,13 +125,13 @@ export default function TabbedServices() {
           </div>
 
           {/* Additional Services - Plain Text */}
-          <div className="hidden sm:grid md:grid-cols-2 gap-8 mt-12 text-center">
+          {/* <div className="hidden sm:grid md:grid-cols-2 gap-8 mt-12 text-center">
             {additionalEcommerceServices.map((service, index) => (
               <div key={index}>
                 <h4 className="font-semibold text-gray-900 text-lg">{service}</h4>
               </div>
             ))}
-          </div>
+          </div> */}
         </TabsContent>
 
         <TabsContent value="healthcare" className="space-y-8">
@@ -159,13 +170,13 @@ export default function TabbedServices() {
           </div>
 
           {/* Additional Services - Plain Text */}
-          <div className="grid md:grid-cols-2 gap-8 mt-12 text-center">
+          {/* <div className="grid md:grid-cols-2 gap-8 mt-12 text-center">
             {additionalHealthcareServices.map((service, index) => (
               <div key={index}>
                 <h4 className="font-semibold text-gray-900 text-lg">{service}</h4>
               </div>
             ))}
-          </div>
+          </div> */}
         </TabsContent>
 
         {/* Call to Action */}

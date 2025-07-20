@@ -8,6 +8,7 @@ const contactSchema = z.object({
   lastName: z.string().min(1, "Last name is required").max(50, "Last name is too long"),
   email: z.string().email("Please enter a valid email address"),
   company: z.string().min(1, "Company name is required").max(100, "Company name is too long"),
+  industry: z.string().min(1, "Please select an industry"),
   message: z.string().min(10, "Message must be at least 10 characters").max(1000, "Message is too long"),
 })
 
@@ -19,6 +20,7 @@ export interface ContactFormState {
     lastName?: string[]
     email?: string[]
     company?: string[]
+    industry?: string[]
     message?: string[]
   }
 }
@@ -31,6 +33,7 @@ export async function submitContactForm(prevState: ContactFormState, formData: F
       lastName: formData.get("lastName") as string,
       email: formData.get("email") as string,
       company: formData.get("company") as string,
+      industry: formData.get("industry") as string,
       message: formData.get("message") as string,
     }
 

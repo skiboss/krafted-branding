@@ -172,150 +172,136 @@ export default function ServicePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Testimonial 1 */}
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
-              <div className="flex items-center gap-4 mb-4">
-                <Image
-                  src="/placeholder.svg?height=50&width=50"
-                  alt="Client"
-                  width={50}
-                  height={50}
-                  className="rounded-full"
-                />
-                <div>
-                  <h4 className="font-semibold dark:text-white">Neesh R.</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Founder, HealthActivator
-                  </p>
-                </div>
-              </div>
-              <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4">
-                "Krafted's email management, local ads, and content marketing
-                hit all worked. They revamped our product pages and boosted our
-                conversion rate by 41% in 3 weeks."
-              </p>
-            </div>
-
-            {/* Testimonial 2 */}
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
-              <div className="flex items-center gap-4 mb-4">
-                <Image
-                  src="/placeholder.svg?height=50&width=50"
-                  alt="Client"
-                  width={50}
-                  height={50}
-                  className="rounded-full"
-                />
-                <div>
-                  <h4 className="font-semibold dark:text-white">Susan M.</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Founder, HoneyGlow Skincare
-                  </p>
-                </div>
-              </div>
-              <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4">
-                "We got more patients, better reviews, and a stronger online
-                presence. Krafted's ad strategy literally changed the trajectory
-                of our store. They helped us scale Google Ads while optimizing
-                our email funnel. We went from $10k/month to over $40k."
-              </p>
-            </div>
-
-            {/* Testimonial 3 */}
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
-              <div className="flex items-center gap-4 mb-4">
-                <Image
-                  src="/placeholder.svg?height=50&width=50"
-                  alt="Client"
-                  width={50}
-                  height={50}
-                  className="rounded-full"
-                />
-                <div>
-                  <h4 className="font-semibold dark:text-white">Alex A.</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Co-founder, SteelTrend
-                  </p>
-                </div>
-              </div>
-              <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4">
-                "We saw a 220% revenue increase in just 3 months. Our cart
-                abandonment rate dropped by 40% in 6 weeks."
-              </p>
-            </div>
-
-            {/* Testimonial 4 */}
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
-              <div className="flex items-center gap-4 mb-4">
-                <Image
-                  src="/placeholder.svg?height=50&width=50"
-                  alt="Client"
-                  width={50}
-                  height={50}
-                  className="rounded-full"
-                />
-                <div>
-                  <h4 className="font-semibold dark:text-white">Sarah M.</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Founder, HoneyGlow Skincare
-                  </p>
-                </div>
-              </div>
-              <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4">
-                "They navigated HIPAA compliance, designed targeted campaigns,
-                and helped us build patient trust."
-              </p>
-            </div>
-
-            {/* Testimonial 5 */}
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
-              <div className="flex items-center gap-4 mb-4">
-                <Image
-                  src="/placeholder.svg?height=50&width=50"
-                  alt="Client"
-                  width={50}
-                  height={50}
-                  className="rounded-full"
-                />
-                <div>
-                  <h4 className="font-semibold dark:text-white">Emily</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Email marketing went from an afterthought to our #1 sales
-                    driver
-                  </p>
-                </div>
-              </div>
-              <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4">
-                "We now drive 28% of our monthly revenue from email. Krafted
-                Branding automated our campaigns and revised cold leads
-                effortlessly."
-              </p>
-            </div>
-
-            {/* Testimonial 6 */}
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
-              <div className="flex items-center gap-4 mb-4">
-                <Image
-                  src="/placeholder.svg?height=50&width=50"
-                  alt="Client"
-                  width={50}
-                  height={50}
-                  className="rounded-full"
-                />
-                <div>
-                  <h4 className="font-semibold dark:text-white">David U.</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
-                    CMO, PetRock Supplies
-                  </p>
-                </div>
-              </div>
-              <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4">
-                "Krafted helped us rethink our messaging targeting and user
-                experience. We saw a 2x revenue and 3x engagement."
-              </p>
-            </div>
-          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                      {/* Testimonial 1 */}
+                      <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
+                        <div className="flex items-center gap-4 mb-4">
+                          <Image
+                            src="/images/test6.png"
+                            alt="Client"
+                            width={50}
+                            height={50}
+                            className="rounded-full"
+                          />
+                          <div>
+                            <h4 className="font-semibold dark:text-white">Jenny</h4>
+                            <p className="text-sm text-gray-600 dark:text-gray-400">CMO, Focallure</p>
+                          </div>
+                        </div>
+                        <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4">
+                          "Overall, Krafted Branding's blend of creativity, analytics, and relentless optimization across Meta and Google ads has been the backbone
+                          of our brand's success. They've not only delivered measurable ROI but also empowered us to focus more on satisfying our customers."
+                        </p>
+                      </div>
+          
+                      {/* Testimonial 2 */}
+                      <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
+                        <div className="flex items-center gap-4 mb-4">
+                          <Image
+                            src="/images/test3.png"
+                            alt="Client"
+                            width={50}
+                            height={50}
+                            className="rounded-full"
+                          />
+                          <div>
+                            <h4 className="font-semibold dark:text-white">Neesh R.</h4>
+                            <p className="text-sm text-gray-600 dark:text-gray-400">Founder, HealthActivator</p>
+                          </div>
+                        </div>
+                        <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4">
+                          "Krafted's email management, local ads, and content marketing hit all worked. They revamped our product
+                          pages and boosted our conversion rate by 41% in 3 weeks."
+                        </p>
+                      </div>
+          
+                      {/* Testimonial 3 */}
+                      <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
+                        <div className="flex items-center gap-4 mb-4">
+                          <Image
+                            src="/images/test5.png"
+                            alt="Client"
+                            width={50}
+                            height={50}
+                            className="rounded-full"
+                          />
+                          <div>
+                            <h4 className="font-semibold dark:text-white">Susan M.</h4>
+                            <p className="text-sm text-gray-600 dark:text-gray-400">Founder, HoneyGlow Skincare</p>
+                          </div>
+                        </div>
+                        <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4">
+                          "We got more patients, better reviews, and a stronger online presence. Krafted's ad strategy literally
+                          changed the trajectory of our store. They helped us scale Google Ads while optimizing our email funnel.
+                          We went from $10k/month to over $40k."
+                        </p>
+                      </div>
+          
+                      {/* Testimonial 4 */}
+                      <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
+                        <div className="flex items-center gap-4 mb-4">
+                          <Image
+                            src="/images/test1.png"
+                            alt="Client"
+                            width={50}
+                            height={50}
+                            className="rounded-full"
+                          />
+                          <div>
+                            <h4 className="font-semibold dark:text-white">Chris</h4>
+                            <p className="text-sm text-gray-600 dark:text-gray-400">Founder, Klex Beauty</p>
+                          </div>
+                        </div>
+                        <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4">
+                          "We started working with Krafted branding for our first brand - Klex Beauty and we were blown by their Meta and Goodle
+                          Ads mastery delivering consistent great ROAS and scaling us to six figure revenue in months and this success funded two 
+                          new brands - our launches of Dank brand (fragrance diffusers) and Tiblends (wellness brand), where they adapted strategies
+                          seamlessly - creative led campaigns for Dank yielding 5+ ROAS and fitness-focused shopping ads for Tiblends boosting conversions
+                          40%. Krafted's data-driven tweaks turned ads into profit machines across all brands."
+                        </p>
+                      </div>
+          
+                      {/* Testimonial 5 */}
+                      <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
+                        <div className="flex items-center gap-4 mb-4">
+                          <Image
+                            src="/images/test7.png"
+                            alt="Client"
+                            width={50}
+                            height={50}
+                            className="rounded-full"
+                          />
+                          <div>
+                            <h4 className="font-semibold dark:text-white">Alex A.</h4>
+                            <p className="text-sm text-gray-600 dark:text-gray-400">Co-founder, SteelTrend</p>
+                          </div>
+                        </div>
+                        <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4">
+                          "We saw a 220% revenue increase in just 3 months. Our cart abandonment rate dropped by 40% in 6 weeks."
+                        </p>
+                      </div>
+          
+                      {/* Testimonial 6 */}
+                      <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6">
+                        <div className="flex items-center gap-4 mb-4">
+                          <Image
+                            src="/images/test2.png"
+                            alt="Client"
+                            width={50}
+                            height={50}
+                            className="rounded-full"
+                          />
+                          <div>
+                            <h4 className="font-semibold dark:text-white">Sarah M.</h4>
+                            <p className="text-sm text-gray-600 dark:text-gray-400">Founder, Balding</p>
+                          </div>
+                        </div>
+                        <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4">
+                          "They navigated HIPAA compliance, designed targeted campaigns, and helped us build patient trust."
+                        </p>
+                      </div>
+          
+                    </div>
         </div>
       </section>
 

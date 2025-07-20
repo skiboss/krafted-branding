@@ -1,109 +1,130 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Alert, AlertDescription } from "@/components/ui/alert"
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 // import { CheckCircle, Mail } from "lucide-react"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select"
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "./ui/select";
 
-import { useActionState, useEffect, useState } from "react"
-import { submitContactForm, type ContactFormState } from "@/actions/contact"
-import { CheckCircle, AlertCircle, Loader2, Mail } from "lucide-react"
+import { useActionState, useEffect, useState } from "react";
+import { submitContactForm, type ContactFormState } from "@/actions/contact";
+import { CheckCircle, AlertCircle, Loader2, Mail } from "lucide-react";
 
-const initialState: ContactFormState = {}
+const initialState: ContactFormState = {};
+const industries = [
+  { value: "ecommerce", label: "E-commerce" },
+  { value: "healthcare", label: "Healthcare" },
+];
 
 export function ContactForm() {
-    const [state, formAction, isPending ] = useActionState(submitContactForm, initialState)
+  const [state, formAction, isPending] = useActionState(
+    submitContactForm,
+    initialState
+  );
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
     company: "",
+    industry: "",
     message: "",
-  })
-//   const [showConfirmation, setShowConfirmation] = useState(false)
+  });
+  //   const [showConfirmation, setShowConfirmation] = useState(false)
 
   // Check if all fields are filled
   const isFormValid =
-    Object.values(formData).every((value) => value.trim().length > 0) && formData.message.trim().length >= 10
+    Object.values(formData).every((value) => value.trim().length > 0) &&
+    formData.message.trim().length >= 10;
 
   // Handle input changes
   const handleInputChange = (field: string, value: string) => {
-    setFormData((prev) => ({ ...prev, [field]: value }))
-  }
+    setFormData((prev) => ({ ...prev, [field]: value }));
+  };
+
+  // Handle select change
+  const handleSelectChange = (value: string) => {
+    setFormData((prev) => ({ ...prev, industry: value }));
+  };
 
   // Reset form after a delay
-    useEffect(() => {
-        if (state.success) {
+  useEffect(() => {
+    if (state.success) {
       setFormData({
         firstName: "",
         lastName: "",
         email: "",
         company: "",
+        industry: "",
         message: "",
-      })
+      });
     }
-}, [state.success])
+  }, [state.success]);
 
   // Handle form submission
-//   const handleSubmit = (e: React.FormEvent) => {
-//     e.preventDefault()
+  //   const handleSubmit = (e: React.FormEvent) => {
+  //     e.preventDefault()
 
-//     if (!isFormValid) return
+  //     if (!isFormValid) return
 
-    // Compose email content
-//     const subject = `Contact Form Submission from ${formData.firstName} ${formData.lastName}`
-//     const body = `
-// Hello,
+  // Compose email content
+  //     const subject = `Contact Form Submission from ${formData.firstName} ${formData.lastName}`
+  //     const body = `
+  // Hello,
 
-// You have received a new contact form submission from your website.
+  // You have received a new contact form submission from your website.
 
-// Contact Information:
-// - Name: ${formData.firstName} ${formData.lastName}
-// - Email: ${formData.email}
-// - Company: ${formData.company}
+  // Contact Information:
+  // - Name: ${formData.firstName} ${formData.lastName}
+  // - Email: ${formData.email}
+  // - Company: ${formData.company}
 
-// Message:
-// ${formData.message}
+  // Message:
+  // ${formData.message}
 
-// ---
-// This email was generated from the Krafted contact form on ${new Date().toLocaleDateString("en-US", {
-//       weekday: "long",
-//       year: "numeric",
-//       month: "long",
-//       day: "numeric",
-//       hour: "2-digit",
-//       minute: "2-digit",
-//     })}
+  // ---
+  // This email was generated from the Krafted contact form on ${new Date().toLocaleDateString("en-US", {
+  //       weekday: "long",
+  //       year: "numeric",
+  //       month: "long",
+  //       day: "numeric",
+  //       hour: "2-digit",
+  //       minute: "2-digit",
+  //     })}
 
-// Please reply directly to ${formData.email} to respond to this inquiry.
-//     `.trim()
+  // Please reply directly to ${formData.email} to respond to this inquiry.
+  //     `.trim()
 
-//     // Create mailto URL
-//     const mailtoUrl = `mailto:aoghenemeru@yahoo.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+  //     // Create mailto URL
+  //     const mailtoUrl = `mailto:aoghenemeru@yahoo.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
 
-//     // Open default email client
-//     window.location.href = mailtoUrl
+  //     // Open default email client
+  //     window.location.href = mailtoUrl
 
-//     // Show confirmation message
-//     setShowConfirmation(true)
+  //     // Show confirmation message
+  //     setShowConfirmation(true)
 
-//     // Reset form after a delay
-//     setTimeout(() => {
-//       setFormData({
-//         firstName: "",
-//         lastName: "",
-//         email: "",
-//         company: "",
-//         message: "",
-//       })
-//       setShowConfirmation(false)
-//     }, 5000)
-//   }
+  //     // Reset form after a delay
+  //     setTimeout(() => {
+  //       setFormData({
+  //         firstName: "",
+  //         lastName: "",
+  //         email: "",
+  //         company: "",
+  //         message: "",
+  //       })
+  //       setShowConfirmation(false)
+  //     }, 5000)
+  //   }
 
   return (
     <Card className="bg-white/5 border-none">
@@ -113,13 +134,17 @@ export function ContactForm() {
       <CardContent>
         {/* Confirmation Message */}
         {state.message && (
-          <Alert className={`mb-6 ${state.success ? "border-green-200 bg-green-50" : "border-red-200 bg-red-50"}`}>
+          <Alert
+            className={`mb-6 ${state.success ? "border-green-200 bg-green-50" : "border-red-200 bg-red-50"}`}
+          >
             {state.success ? (
               <CheckCircle className="h-4 w-4 text-green-600" />
             ) : (
               <AlertCircle className="h-4 w-4 text-red-600" />
             )}
-            <AlertDescription className={state.success ? "text-green-800" : "text-red-800"}>
+            <AlertDescription
+              className={state.success ? "text-green-800" : "text-red-800"}
+            >
               {state.message}
             </AlertDescription>
           </Alert>
@@ -128,7 +153,10 @@ export function ContactForm() {
         <form action={formAction} className="space-y-6">
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <label htmlFor="firstName" className="block text-sm font-medium text-gray-300 mb-2">
+              <label
+                htmlFor="firstName"
+                className="block text-sm font-medium text-gray-300 mb-2"
+              >
                 First Name *
               </label>
               <Input
@@ -137,14 +165,24 @@ export function ContactForm() {
                 placeholder="Susan"
                 value={formData.firstName}
                 onChange={(e) => handleInputChange("firstName", e.target.value)}
-                className={state.errors?.firstName ? "border-red-300 focus:border-red-500" : ""}
+                className={
+                  state.errors?.firstName
+                    ? "border-red-300 focus:border-red-500"
+                    : "bg-white/5 border-white/20 text-white placeholder:text-[#bcbcbc]/60"
+                }
                 disabled={isPending}
               />
-              {state.errors?.firstName && <p className="mt-1 text-sm text-red-600">
-                {state.errors.firstName[0]}</p>}
+              {state.errors?.firstName && (
+                <p className="mt-1 text-sm text-red-600">
+                  {state.errors.firstName[0]}
+                </p>
+              )}
             </div>
             <div>
-              <label htmlFor="lastName" className="block text-sm font-medium text-gray-300 mb-2">
+              <label
+                htmlFor="lastName"
+                className="block text-sm font-medium text-gray-300 mb-2"
+              >
                 Last Name *
               </label>
               <Input
@@ -153,16 +191,26 @@ export function ContactForm() {
                 placeholder="Grey"
                 value={formData.lastName}
                 onChange={(e) => handleInputChange("lastName", e.target.value)}
-                className={state.errors?.lastName ? "border-red-300 focus:border-red-500" : ""}
+                className={
+                  state.errors?.lastName
+                    ? "border-red-300 focus:border-red-500"
+                    : "bg-white/5 border-white/20 text-white placeholder:text-[#bcbcbc]/60"
+                }
                 disabled={isPending}
               />
-              {state.errors?.lastName && <p className="mt-1 text-sm text-red-600">
-                {state.errors.lastName[0]}</p>}
+              {state.errors?.lastName && (
+                <p className="mt-1 text-sm text-red-600">
+                  {state.errors.lastName[0]}
+                </p>
+              )}
             </div>
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-300 mb-2"
+            >
               Email *
             </label>
             <Input
@@ -172,52 +220,83 @@ export function ContactForm() {
               placeholder="john@example.com"
               value={formData.email}
               onChange={(e) => handleInputChange("email", e.target.value)}
-              className={state.errors?.email ? "border-red-300 focus:border-red-500" : ""}
+              className={
+                state.errors?.email ? "border-red-300 focus:border-red-500" : "bg-white/5 border-white/20 text-white placeholder:text-[#bcbcbc]/60"
+              }
               disabled={isPending}
             />
 
-            {state.errors?.email && <p className="mt-1 text-sm text-red-600">
-                {state.errors.email[0]}</p>}
+            {state.errors?.email && (
+              <p className="mt-1 text-sm text-red-600">
+                {state.errors.email[0]}
+              </p>
+            )}
           </div>
 
           <div className="grid grid-cols-2 gap-4">
             <div>
-            <label htmlFor="company" className="block text-sm font-medium text-gray-300 mb-2">
-              Company *
-            </label>
-            <Input
-              id="company"
-              name="company"
-              placeholder="Your Company"
-              value={formData.company}
-              onChange={(e) => handleInputChange("company", e.target.value)}
-              className={state.errors?.company ? "border-red-300 focus:border-red-500" : "bg-white/5 border-white/20 text-white placeholder:text-[#bcbcbc]/60"}
-              disabled={isPending}
-            />
+              <label
+                htmlFor="company"
+                className="block text-sm font-medium text-gray-300 mb-2"
+              >
+                Company *
+              </label>
+              <Input
+                id="company"
+                name="company"
+                placeholder="Your Company"
+                value={formData.company}
+                onChange={(e) => handleInputChange("company", e.target.value)}
+                className={
+                  state.errors?.company
+                    ? "border-red-300 focus:border-red-500"
+                    : "bg-white/5 border-white/20 text-white placeholder:text-[#bcbcbc]/60"
+                }
+                disabled={isPending}
+              />
 
-            {state.errors?.company && <p className="mt-1 text-sm text-red-600">
-                {state.errors.company[0]}</p>}
+              {state.errors?.company && (
+                <p className="mt-1 text-sm text-red-600">
+                  {state.errors.company[0]}
+                </p>
+              )}
             </div>
 
             <div>
-                              <label className="block mb-2 text-sm">Industry</label>
-                              <Select>
-                                <SelectTrigger className="bg-white/5 border-white/20 text-white">
-                                  <SelectValue placeholder="Select Industry" className="text-blue" />
-                                </SelectTrigger>
-                                <SelectContent>
-                                  <SelectItem value="ecommerce">E-Commerce</SelectItem>
-                                  <SelectItem value="healthcare">Healthcare</SelectItem>
-                                  <SelectItem value="other">Other</SelectItem>
-                                </SelectContent>
-                              </Select>
-                            </div>
+              <label className="block text-sm font-medium text-gray-300 mb-2">Industry</label>
+              <Select
+                name="industry"
+                value={formData.industry}
+                onValueChange={handleSelectChange}
+                disabled={isPending}
+              >
+                <SelectTrigger
+                  className={`w-full ${state.errors?.industry ? "border-red-300 focus:border-red-500" : "bg-white/5 border-white/20 text-white"}`}
+                >
+                  <SelectValue
+                    placeholder="Select your industry"
+                    className="text-blue"
+                  />
+                </SelectTrigger>
+                <SelectContent>
+                  {industries.map((industry) => (
+                    <SelectItem key={industry.value} value={industry.value}>
+                      {industry.label}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+              {state.errors?.industry && <p className="mt-1 text-sm text-red-600">{state.errors.industry[0]}</p>}
+            </div>
           </div>
-          
 
           <div>
-            <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-              Message * <span className="text-gray-500">(minimum 10 characters)</span>
+            <label
+              htmlFor="message"
+              className="block text-sm font-medium text-gray-300 mb-2"
+            >
+              Message *{" "}
+              <span className="text-gray-500">(minimum 10 characters)</span>
             </label>
             <Textarea
               id="message"
@@ -226,15 +305,23 @@ export function ContactForm() {
               rows={5}
               value={formData.message}
               onChange={(e) => handleInputChange("message", e.target.value)}
-              className={state.errors?.message ? "border-red-300 focus:border-red-500" : "min-h-[120px] bg-white/5 border-white/20 text-white placeholder:text-[#bcbcbc]/60"}
+              className={
+                state.errors?.message
+                  ? "border-red-300 focus:border-red-500"
+                  : "min-h-[120px] bg-white/5 border-white/20 text-white placeholder:text-[#bcbcbc]/60"
+              }
               disabled={isPending}
-            //   minLength={10}
+              //   minLength={10}
             />
             <div className="flex justify-between items-center mt-1">
               {state.errors?.message ? (
-                <p className="text-sm text-red-600">{state.errors.message[0]}</p>
+                <p className="text-sm text-red-600">
+                  {state.errors.message[0]}
+                </p>
               ) : (
-                <p className="text-sm text-gray-500">{formData.message.length}/1000 characters</p>
+                <p className="text-sm text-gray-500">
+                  {formData.message.length}/1000 characters
+                </p>
               )}
             </div>
           </div>
@@ -242,7 +329,9 @@ export function ContactForm() {
           <Button
             type="submit"
             className={`w-full transition-all duration-200 ${
-              isFormValid && !isPending ? "bg-[#541349] hover:bg-[#541369] cursor-pointer" : "bg-gray-300 cursor-not-allowed"
+              isFormValid && !isPending
+                ? "bg-[#541349] hover:bg-[#541369] cursor-pointer"
+                : "bg-gray-300 cursor-not-allowed"
             }`}
             disabled={!isFormValid || isPending}
           >
@@ -252,15 +341,19 @@ export function ContactForm() {
                 Sending Message...
               </>
             ) : (
-                <><Mail className="w-4 h-4 mr-2" /> Send Message </>
+              <>
+                <Mail className="w-4 h-4 mr-2" /> Send Message{" "}
+              </>
             )}
           </Button>
 
           {!isFormValid && (
-            <p className="text-sm text-gray-500 text-center">Please fill in all required fields to send your message</p>
+            <p className="text-sm text-gray-500 text-center">
+              Please fill in all required fields to send your message
+            </p>
           )}
         </form>
       </CardContent>
     </Card>
-  )
+  );
 }
