@@ -308,7 +308,7 @@ export default function ServicePage() {
   
 
       {/* CTA Section */}
-      <section className="bg-[#1f0104] text-white py-16 px-4 md:px-8 lg:px-16">
+      <section className="bg-fuchsia-950 text-white py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#fee5f8] mb-6">
             Ready to Trasform Your Marketing Results Too?
@@ -316,7 +316,7 @@ export default function ServicePage() {
           <h2 className="text-3xl md:text-4xl font-bold mb-10">
             Join the brands that chose specialization over generalization
           </h2>
-          <Button className="bg-[#fee5f8] text-[#1f0104] hover:bg-gray-100 px-16 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+          <Button className="bg-[#fee5f8] text-fuchsia-950 hover:bg-gray-100 px-16 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
             Get Started
           </Button>
         </div>

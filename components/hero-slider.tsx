@@ -23,7 +23,7 @@ const slides: SlideData[] = [
     highlightedWords: ["E-commerce", "Healthcare"],
     subtitle:
       "We craft data-driven, results-obsessed strategies to grow your revenue and your brand in the e-commerce and healthcare industries",
-    primaryButton: "Book Consultation",
+    primaryButton: "Book Strategy Call",
     secondaryButton: "Explore Services",
   },
   {
@@ -33,7 +33,7 @@ const slides: SlideData[] = [
     highlightedWords: ["Patients", "Trust"],
     subtitle:
       "We help healthcare brands grow with HIPAA-compliant campaigns, local SEO, and patient-focused messaging that builds credibility and drives results.",
-    primaryButton: "Book Consultation",
+    primaryButton: "Book Strategy Call",
     secondaryButton: "Explore Services",
   },
   {
@@ -43,7 +43,7 @@ const slides: SlideData[] = [
     highlightedWords: ["Digital Presence", "Data-Driven"],
     subtitle:
       "From conversion optimization to brand positioning, we deliver measurable results that scale your business and maximize your ROI across all channels.",
-    primaryButton: "Book Consultation",
+    primaryButton: "Book Strategy Call",
     secondaryButton: "Explore Services",
   },
 ]
@@ -120,14 +120,18 @@ export function HeroSlider() {
                   size="lg"
                   className="bg-[#541349] hover:bg-white hover:border-2 hover:border-[#541349] text-white hover:text-[#541349] px-10 py-5 rounded-md font-medium text-lg shadow-lg"
                 >
+                  <a href="https://calendly.com/chris-ojukoko-jnr/30min" target="_blank">
                   {slide.primaryButton}
+                   </a>
+                  
                 </Button>
                 <Button
                   size="lg"
                   variant="outline"
                   className="border-2 border-[#541349] text-[#541349] hover:bg-white hover:text-[#541349] px-10 py-5 rounded-md font-medium text-lg bg-transparent"
                 >
-                  {slide.secondaryButton}
+                  <a href="/services">{slide.secondaryButton}</a>
+                  
                 </Button>
               </div>
             </div>

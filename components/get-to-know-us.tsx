@@ -132,7 +132,7 @@ export function GetToKnowSection() {
           }`}
         >
           <Image
-            src="/images/gtkt1.png"
+            src="/images/gtk1.jpg"
             alt="Analytics dashboard showing business metrics and charts"
             width={300}
             height={200}
@@ -194,7 +194,7 @@ export function GetToKnowSection() {
           }`}
         >
           <Image
-            src="/images/gtkb.png"
+            src="/images/gtkb.jpg"
             alt="Analytics dashboard showing business metrics and charts"
             width={300}
             height={200}

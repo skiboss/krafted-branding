@@ -122,7 +122,7 @@ export default function AboutPage() {
               How Are We Different?
             </h2>
             <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed mb-6 sm:mb-8">
-              We stands at the intersection of data, creativity, and deep
+              We stand at the intersection of data, creativity, and deep
               industry focus, exclusively serving e-commerce and healthcare
               brands
             </p>

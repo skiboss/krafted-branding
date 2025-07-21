@@ -8,7 +8,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Facebook, Instagram, Linkedin, MessageSquareIcon, Twitter } from "lucide-react";
+import { Facebook, Instagram, LetterText, Linkedin, LucideMessageCircle, MessageSquareIcon, Twitter } from "lucide-react";
 
 
 import { PageLoader } from "@/components/page-loader"
@@ -86,7 +86,7 @@ export default function RootLayout({
                 <ThemeToggle />
                 <Button className="bg-[#541349] hover:bg-white border-2 border-[#541349] hover:text-[#541349] px-9 py-4 text-white rounded-full">
                   <Link
-                  href="/blog">
+                  href="https://calendly.com/chris-ojukoko-jnr/30min" target="_blank">
                     Get Free Audit
                     </Link>
                 </Button>
@@ -234,7 +234,7 @@ export default function RootLayout({
                   href="#"
                   className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
                 >
-                  <MessageSquareIcon className="h-5 w-5" />
+                  <LucideMessageCircle className="h-5 w-5" />
                 </Link>
                 <Link
                   href="https://www.linkedin.com/company/krafted-branding"
