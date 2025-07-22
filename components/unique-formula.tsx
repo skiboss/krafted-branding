@@ -109,7 +109,7 @@ export function UniqueFormula() {
                     </div>
                     {index < step1Items.length - 1 && (
                       <div className="flex justify-center mx-4">
-                        <Plus className="w-6 h-6 text-purple-300" />
+                        <Plus className="w-6 h-6 text-fuchsia-300" />
                       </div>
                     )}
                   </div>
@@ -168,7 +168,7 @@ export function UniqueFormula() {
                     </div>
                     {index < step2Items.length - 1 && (
                       <div className="flex justify-center mx-6">
-                        <Plus className="w-6 h-6 text-purple-300" />
+                        <Plus className="w-6 h-6 text-fuchsia-300" />
                       </div>
                     )}
                   </div>
@@ -222,7 +222,7 @@ export function UniqueFormula() {
                   {step1Items.slice(0, 2).map((item, index) => (
                     <div
                       key={index}
-                      className={`bg-purple-800/40 backdrop-blur-sm border border-purple-400/30 rounded-xl p-4 text-center hover:bg-purple-700/40 transition-all duration-300 ${
+                      className={`bg-fuchsia-900/70 backdrop-blur-sm border border-purple-400/30 rounded-xl p-4 text-center hover:bg-purple-700/40 transition-all duration-300 ${
                         isVisible ? "animate-fade-in-up" : ""
                       }`}
                       style={{ animationDelay: `${400 + index * 100}ms` }}
@@ -233,14 +233,14 @@ export function UniqueFormula() {
                 </div>
 
                 <div className="flex justify-center">
-                  <Plus className="w-5 h-5 text-purple-300" />
+                  <Plus className="w-5 h-5 text-fuchsia-300" />
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
                   {step1Items.slice(2, 4).map((item, index) => (
                     <div
                       key={index + 2}
-                      className={`bg-purple-800/40 backdrop-blur-sm border border-purple-400/30 rounded-xl p-4 text-center hover:bg-purple-700/40 transition-all duration-300 ${
+                      className={`bg-fuchsia-900/70 backdrop-blur-sm border border-purple-400/30 rounded-xl p-4 text-center hover:bg-purple-700/40 transition-all duration-300 ${
                         isVisible ? "animate-fade-in-up" : ""
                       }`}
                       style={{ animationDelay: `${600 + index * 100}ms` }}
@@ -262,7 +262,7 @@ export function UniqueFormula() {
             <div className="relative">
               {/* Step 2 Label */}
               <div className="flex justify-center mb-8">
-                <div className="bg-purple-700/50 backdrop-blur-sm border border-purple-400/30 rounded-full px-6 py-2 relative z-20">
+                <div className="bg-fuchsia-700/50 backdrop-blur-sm border border-purple-400/30 rounded-full px-6 py-2 relative z-20">
                   <span className="text-base font-semibold">Step 2</span>
                 </div>
               </div>
@@ -294,7 +294,7 @@ export function UniqueFormula() {
                 {step2Items.map((item, index) => (
                   <div key={index}>
                     <div
-                      className={`bg-purple-800/40 backdrop-blur-sm border border-purple-400/30 rounded-xl p-4 text-center hover:bg-purple-700/40 transition-all duration-300 ${
+                      className={`bg-fuchsia-900/70 backdrop-blur-sm border border-purple-400/30 rounded-xl p-4 text-center hover:bg-purple-700/40 transition-all duration-300 ${
                         isVisible ? "animate-fade-in-up" : ""
                       }`}
                       style={{ animationDelay: `${800 + index * 100}ms` }}
@@ -303,7 +303,7 @@ export function UniqueFormula() {
                     </div>
                     {index < step2Items.length - 1 && (
                       <div className="flex justify-center my-4">
-                        <Plus className="w-5 h-5 text-purple-300" />
+                        <Plus className="w-5 h-5 text-fuchsia-300" />
                       </div>
                     )}
                   </div>
