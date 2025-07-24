@@ -35,7 +35,7 @@ export function ContactSection() {
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
                   <HouseIcon className="h-5 w-5 text-white/80" />
-                  <span>30N Gould St Ste R Sheridan, WY 82801</span>
+                  <span>30N Gould St Ste R Sheridan, WY 82801, USA</span>
                 </div>
                 <div className="flex items-center gap-4">
                   <Phone className="h-5 w-5 text-white/80" />
