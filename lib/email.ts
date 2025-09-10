@@ -21,8 +21,8 @@ export async function sendContactEmail(data: ContactFormData) {
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f9fafb;">
           <div style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <div style="text-align: center; margin-bottom: 30px;">
-              <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #9333ea, #ec4899); border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+            <div style="text-align: center; margin-bottom: 20px;">
+              <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #9333ea, #ec4899); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
                 <span style="color: white; font-weight: bold; font-size: 24px; text-align: center;">K</span>
               </div>
               <h1 style="color: #1f2937; margin: 0; font-size: 24px;">New Contact Form Submission</h1>
