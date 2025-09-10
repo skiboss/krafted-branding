@@ -23,7 +23,7 @@ export async function sendContactEmail(data: ContactFormData) {
           <div style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
             <div style="text-align: center; margin-bottom: 30px;">
               <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #9333ea, #ec4899); border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                <span style="color: white; font-weight: bold; font-size: 24px;">K</span>
+                <span style="color: white; font-weight: bold; font-size: 24px; text-align: center;">K</span>
               </div>
               <h1 style="color: #1f2937; margin: 0; font-size: 24px;">New Contact Form Submission</h1>
             </div>
@@ -44,6 +44,10 @@ export async function sendContactEmail(data: ContactFormData) {
                 <tr>
                   <td style="padding: 8px 0; color: #6b7280; font-weight: 600;">Company:</td>
                   <td style="padding: 8px 0; color: #1f2937;">${data.company}</td>
+                </tr>
+                <tr>
+                  <td style="padding: 8px 0; color: #6b7280; font-weight: 600;">Industry:</td>
+                  <td style="padding: 8px 0; color: #1f2937;">${data.industry}</td>
                 </tr>
               </table>
             </div>
